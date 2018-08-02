@@ -9,17 +9,17 @@ function round(amount, decimals) {
 	
 	var cities = document.getElementById('cities').value;
 
-	var currency = 'R$';
-	var kiloWattHour = 0.81; //in your currency;
+	var currency = document.getElementById('currency').value;
+	var kiloWattHour = document.getElementById('kwHour').value; //in your currency;
 
 	//CPU informations
-	var ghz = 3.1;
-	var cores = 4;
-	var TDP = 25;//watts
+	var ghz = document.getElementById('cpuGHZ').value;
+	var cores = document.getElementById('cpuCores').value;
+	var TDP = document.getElementById('cpuTDP').value;//watts
 
 	//Number of CPU able to compute
-	var parallelCPUs = 1;
-	  
+	var parallelCPUs = document.getElementById('parallelCPUs').value;
+
 
 	//=====================================================
 	var possibilities = 1;
@@ -43,20 +43,15 @@ function round(amount, decimals) {
 		result = result+ "<td>"+possibilities+"</td>"
 		//result = result+ "<tr>"
 		if(myears > 1){
-			//result = result+"   time: "+round(myears,3)+" million of years";
 			result = result + "<td>"+round(myears,3)+" million of years</td>";
 		}else if(years > 1) {
-			//result = result+"   time: "+round(years,3)+" years";
-			result = result + "<td>"+round(years,3)+" years</td>";
+			result = result + "<td>"+round(years)+" years and "+ round((years % 1)*365) +" days</td>";
 		} else if(days > 1) { 
-			//result = result+"   time: "+round(days)+" days and ", round((days % 1)*24)," hours";
-			result = result + "<td>"+round(days)+" days and ", round((days % 1)*24)," hours</td>";
+			result = result + "<td>"+round(days)+" days and "+ round((days % 1)*24) +" hours</td>";
 		} else if(hours > 1) {
-			//result = result+"   time: "+round(hours)+" hours and ",round((hours % 1)*60)," minutes";
-			result = result + "<td>"+round(hours)+" hours and ",round((hours % 1)*60)," minutes</td>";
+			result = result + "<td>"+round(hours)+" hours and "+round((hours % 1)*60)+" minutes</td>";
 		} else if(minutes > 1) {
-			//result = result+"   time: "+round(minutes)+" minutes and ",round((minutes % 1)*60)," seconds";
-			result = result + "<td>"+round(minutes)+" minutes and ",round((minutes % 1)*60)," seconds</td>";
+			result = result + "<td>"+round(minutes)+" minutes and "+round((minutes % 1)*60)+" seconds</td>";
 		} else if(seconds>0.0005){
 			//result = result+"   time: "+round(seconds,3)+" seconds";
 			result = result + "<td>"+round(seconds,3)+" seconds</td>";

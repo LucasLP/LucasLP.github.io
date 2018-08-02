@@ -35,17 +35,51 @@
 
 		<div class="ui three column grid">
 			<div class="column" style="width:10%;"></div>
-			<div class="column left aligned">
+			<div class="column left aligned" style="width:80%;">
 				<h1>TSP-Brute-Force-Time-Consumption</h1>
 
-				<div >
-					<input id="cities" type="number" placeholder="Number of Cities...">
+				<div class="column left aligned" style="width:50%;">
+				<form class="ui form">
+				  <div class="field">
+					<label>Number of Cities:</label>
+					 <input id="cities" type="number" value="20">
+				  </div>
+				  <div class="two fields">
+					   <div class="field">
+						<label>Currency</label>
+						<input id="currency" type="text" value="R$">
+					  </div>
+					  <div class="field">
+						<label>Kilo Watt Hour</label>
+						<input id="kwHour" type="number" value="0.81">
+					  </div>
+				  </div>
+				  <label><b>CPU informations</b></label>
+				  <div class="tree fields">
+					  <div class="field">
+						<label>GHz</label>
+						<input id="cpuGHZ" type="number" value="2.5">
+					  </div>
+					  <div class="field">
+						<label>Cores</label>
+						<input id="cpuCores" type="number" value="3">
+					  </div>
+					  <div class="field">
+						<label>TDP</label>
+						<input id="cpuTDP" type="number" value="25"> watts
+					  </div>
+				  </div>
+				  <div class="field">
+					<label>Parallel Computers</label>
+					<input id="parallelCPUs" type="number" value="1">
+				  </div>
+				</form>
 				</div>
-				<button  class="ui input" onClick="TSPTtimeConsumption()"> Execute </button>
+				  <button  class="ui input" onClick="TSPTtimeConsumption()"> Execute </button>
 				<p id="result"></p>
 
 
 			</div>
-		<div class="column right aligned style="width:10%;""></div>
+		<div class="column right aligned" style="width:10%;"></div>
 	</body>
 <html>
