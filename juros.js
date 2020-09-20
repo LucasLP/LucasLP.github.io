@@ -12,10 +12,10 @@ function execJuros(){
 
 	var result="<table class=\"ui celled table\">"+
 				"<thead><tr>"+
-				"<th>Mês</th>"+
-				"<th>Juros</th>"+
-				"<th>Valor Final</th>"+
-				"<th>Valor Poupado</th>"+
+				"<th>Month</th>"+
+				"<th>Interest</th>"+
+				"<th>Final Value</th>"+
+				"<th>Amount saved</th>"+
 				"</tr></thead><tbody>";
 	for(var i=1;i<N;i++){
 		result = result + "<td>"+i+"</td>";
