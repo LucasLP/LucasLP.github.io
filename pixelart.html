@@ -1,0 +1,263 @@
+
+<html>
+	<head>
+	
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-105158820-1', 'auto');
+	  ga('send', 'pageview');
+	</script>	
+	
+		
+	<script src="https://www.w3schools.com/lib/w3.js"></script>
+
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
+		<script
+			src="https://code.jquery.com/jquery-3.1.1.min.js"
+			integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+			crossorigin="anonymous"></script>
+		<script src="semantic/semantic.min.js"></script>
+		<title>Lucas Prestes : Pixel Art Generator </title>
+
+		
+		<script type="text/javascript" src="jtsp.js"></script>
+	</head>
+	<body>
+		<div w3-include-html="menu.html"></div> 
+		<script>
+		w3.includeHTML();
+		</script>
+
+
+		<div class="ui three column grid">
+			<div class="column" style="width:10%;"></div>
+			<div class="column left aligned" style="width:80%;">
+				<h1>Pixel Art Generator</h1>
+
+				Image upload:
+				<input type='file' id="image" />
+				<br><img id="myImg" src="#" alt="your image" height=200 width=200>
+				<br><br>
+				<canvas id="mycanvas" height=100 width=100></canvas>
+				<br><br>
+				<pre id="pixelArt" style="font-family: Consolas, monaco, monospace; line-height: 80%;"></pre>
+			</div>
+		<div class="column right aligned" style="width:10%;"></div>
+	</body>
+
+
+
+<script type="text/javascript">
+	width = 50;
+	height= 50;
+
+	window.addEventListener('load', function() {
+		document.getElementById('image')
+		//.querySelector('input[type="file"]')
+			.addEventListener('change', function() {
+			if (this.files && this.files[0]) {
+				var img = document.querySelector('img');  // $('img')[0]
+				img.src = URL.createObjectURL(this.files[0]); // set src to blob url
+				img.onload = imageIsLoaded;
+				
+			}
+		});
+	});
+
+	function imageIsLoaded() { 
+		//console.log(this.src);  // blob url
+		// update width and height ...
+
+		var ctx = document.getElementById('mycanvas').getContext('2d');
+		var img = new Image();   // Create new img element
+		img.onload = function() {
+			ctx.drawImage(img, 0,0,width, height);
+			/*ctx.beginPath();
+			ctx.moveTo(30, 96);
+			ctx.lineTo(70, 66);
+			ctx.lineTo(103, 76);
+			ctx.lineTo(170, 15);
+			ctx.stroke();*/
+			var pixelArt = '';
+			for(var j= 0 ; j < height ; j++ )
+			{
+				for(var i = 0 ; i < width ; i++)
+				{
+					var data = ctx.getImageData(i, j, 1, 1).data;
+					var pxl = [ data[0], data[1], data[2] ];
+					var v =  k_means_clustering(pxl);
+					if(v==1){
+						if(rand()%2==0)
+							pixelArt+= '#';
+						else
+							pixelArt+= 'W';
+					}else if(v==2){
+						//pixelArt+= '.';
+						if(rand()%2==0)
+							pixelArt+= '.';
+						else
+							pixelArt+= ',';
+					}else if(v==3){
+						pixelArt+= ' ';
+					}else if(v==4){
+						//pixelArt+= '$';
+						if(rand()%2==0)
+							pixelArt+= '"';
+						else
+							pixelArt+= '\'';
+					}else if(v==5){
+						//pixelArt+= '*';
+						if(rand()%2==0)
+							pixelArt+= '*';
+						else
+							pixelArt+= ';';
+					}else if(v==6){
+						//pixelArt+= '+';
+
+						let v = rand()%3;
+						if(v==0)
+							pixelArt+= '+';
+						else if(v==1)
+							pixelArt+= '-';
+						else if(v==2)
+							pixelArt+= '/';
+
+					}else if(v==7){
+						//pixelArt+= '-';
+						var c = String.fromCharCode(rand()%10+48);;
+						pixelArt+= c;
+					}else if(v==8){
+						//pixelArt+= '{';
+						if(rand()%2==0)
+							pixelArt+= '{';
+						else
+							pixelArt+= '}';
+					}else if(v==9){
+						//pixelArt+= '}';
+						if(rand()%2==0)
+							pixelArt+= '(';
+						else
+							pixelArt+= ')';
+					}else if(v==10){
+						//pixelArt+= '[';
+						if(rand()%2==0)
+							pixelArt+= '[';
+						else
+							pixelArt+= ']';
+					}else if(v==11){
+						//pixelArt+= ']';
+						if(rand()%2==0)
+							pixelArt+= '<';
+						else
+							pixelArt+= '>';
+					}else if(v==12){
+						//pixelArt+= '&';
+						if(rand()%2==0)
+							pixelArt+= '&';
+						else
+							pixelArt+= '%';
+					}else if(v==13){
+						//pixelArt+= 'e';
+						if(rand()%2==0)
+							pixelArt+= '$';
+						else
+							pixelArt+= '!';
+					}else if(v==14){
+						//pixelArt+= '@';
+						if(rand()%2==0)
+							pixelArt+= '@';
+						else
+							pixelArt+= 'a';
+					}else if(v==15){
+						//pixelArt+= 'a';
+						var v = rand()%3;
+						if(v==0){
+						//    pixelArt+= '#';
+							pixelArt+= 'h';
+						} else if(v==1){
+							pixelArt+= 'u';
+						}else{
+							pixelArt+= 'e';
+						}
+					}else{
+						pixelArt+= ' ';
+					}
+            
+				}
+            	pixelArt+='\n';
+			}
+			
+			var printArt = document.getElementById('pixelArt')
+			printArt.innerHTML = pixelArt;
+			console.log(printArt);
+		};
+		img.src = this.src;//'data:image/gif;base64,R0lGODlhCwALAIAAAAAA3pn/ZiH5BAEAAAEALAAAAAALAAsAAAIUhA+hkcuO4lmNVindo7qyrIXiGBYAOw==';
+		//console.log(img)
+	}
+
+		/*var canvas = document.createElement('canvas');
+		canvas.width = width;
+		canvas.height = height;
+		canvas.getContext('2d').drawImage(this.src, 0, 0, 10,10);// img.width, img.height);
+		var pixelData = canvas.getContext('2d').getImageData(event.offsetX, event.offsetY, 1, 1).data;
+		console.log(pixelData);*/
+	
+
+
+
+
+
+
+function k_means_clustering(data){
+    let c = 15;
+	let m = [[0  ,0  ,0  ],///black
+                     [128,128,128],///gray
+                     [255,255,255],///white
+
+                     [255,0  ,0  ],///red
+                     [128,0  ,0  ],///dark red
+                     [0  ,255,0  ],///green
+                     [0  ,128,0  ],///dark green
+                     [0  ,0  ,255],///blue
+                     [0  ,0  ,128],///dark blue
+
+                     [255,255,0  ],///yellow
+                     [128,128,0  ],///dark yellow
+
+                     [255,0  ,255],///pink
+                     [128,0  ,128],///dark pink
+
+                     [0  ,255,255], ///cyan
+                     [0  ,128,128] ///dark cyan
+                     ];
+
+
+	let distance = [];
+	for(let i=1 ; i<c ; i++ ){distance[i]=0;}
+	let g = 0;
+	distance[0] = dist(m[0],data);
+	for(let i=1 ; i<c ; i++ ){
+        distance[i] = dist(m[i],data);
+        if(distance[i]<distance[g])g=i;
+	}
+	return g+1;
+}
+
+
+function dist(a, b){
+	return Math.sqrt(Math.pow(Math.abs(a[0]-b[0]),2)+
+					Math.pow(Math.abs(a[1]-b[1]),2)+
+					Math.pow(Math.abs(a[2]-b[2]),2));
+}
+
+
+function rand()
+{
+	return Math.floor(Math.random() * 100);
+}
+</script>
+<html>
