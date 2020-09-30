@@ -39,10 +39,13 @@
 				<h1>Pixel Art Generator</h1>
 
 				Image upload:
-				<input type='file' id="image" />
-				<br><img id="myImg" src="#" alt="your image" height=200 width=200>
-				<br><br>
-				<canvas id="mycanvas" height=100 width=100></canvas>
+				<input type='file' id="image" /><br>
+				
+				Width: <input id="inputWidth" type="number" value="50"><br>
+				Height: <input id="inputHeight" type="number" value="50"><br>
+				
+				<br><img id="myImg" src="#" alt="your image" height=100 width=100>
+				<canvas id="mycanvas"></canvas>
 				<br><br>
 				<pre id="pixelArt" style="font-family: Consolas, monaco, monospace; line-height: 80%;"></pre>
 			</div>
@@ -69,19 +72,22 @@
 	});
 
 	function imageIsLoaded() { 
+		
+		width	  = parseFloat(document.getElementById('inputWidth').value); 	
+		height	  = parseFloat(document.getElementById('inputHeight').value); 	
+	
 		//console.log(this.src);  // blob url
 		// update width and height ...
+		var mycanvas = document.getElementById('mycanvas');
 
-		var ctx = document.getElementById('mycanvas').getContext('2d');
+		mycanvas.width = width;
+		mycanvas.height = height
+		mycanvas.style.display = "none";
+		var ctx = mycanvas.getContext('2d');
 		var img = new Image();   // Create new img element
 		img.onload = function() {
 			ctx.drawImage(img, 0,0,width, height);
-			/*ctx.beginPath();
-			ctx.moveTo(30, 96);
-			ctx.lineTo(70, 66);
-			ctx.lineTo(103, 76);
-			ctx.lineTo(170, 15);
-			ctx.stroke();*/
+
 			var pixelArt = '';
 			for(var j= 0 ; j < height ; j++ )
 			{
