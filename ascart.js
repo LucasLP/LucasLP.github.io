@@ -1,3 +1,30 @@
+let conjuntoColorido = [
+    [0  ,0  ,0  ],///black
+    [128,128,128],///gray
+    [255,255,255],///white
+
+    [255,0  ,0  ],///red
+    [128,0  ,0  ],///dark red
+    [0  ,255,0  ],///green
+    [0  ,128,0  ],///dark green
+    [0  ,0  ,255],///blue
+    [0  ,0  ,128],///dark blue
+
+    [255,255,0  ],///yellow
+    [128,128,0  ],///dark yellow
+
+    [255,0  ,255],///pink
+    [128,0  ,128],///dark pink
+
+    [0  ,255,255], ///cyan
+    [0  ,128,128] ///dark cyan
+];
+
+let conjuntoGreyscale =[
+    [0  ,0  ,0  ],///black
+    [128,128,128],///gray
+    [255,255,255],///white
+]
 
 function dist(a, b){
 	return Math.sqrt(Math.pow(Math.abs(a[0]-b[0]),2)+
@@ -15,35 +42,15 @@ function greyscalePixel(data)
     return [med,med,med];
 }
 
-function k_means_clustering(data){
-    let c = 15;
-	let m = [[0  ,0  ,0  ],///black
-            [128,128,128],///gray
-            [255,255,255],///white
-
-            [255,0  ,0  ],///red
-            [128,0  ,0  ],///dark red
-            [0  ,255,0  ],///green
-            [0  ,128,0  ],///dark green
-            [0  ,0  ,255],///blue
-            [0  ,0  ,128],///dark blue
-
-            [255,255,0  ],///yellow
-            [128,128,0  ],///dark yellow
-
-            [255,0  ,255],///pink
-            [128,0  ,128],///dark pink
-
-            [0  ,255,255], ///cyan
-            [0  ,128,128] ///dark cyan
-            ];
+function k_means_clustering(data, clusters){
+    let c = clusters.length;
 
 	let distance = [];
 	for(let i=1 ; i<c ; i++ ){distance[i]=0;}
 	let g = 0;
-	distance[0] = dist(m[0],data);
+	distance[0] = dist(clusters[0],data);
 	for(let i=1 ; i<c ; i++ ){
-        distance[i] = dist(m[i],data);
+        distance[i] = dist(clusters[i],data);
         if(distance[i]<distance[g])g=i;
 	}
 	return g+1;
@@ -92,12 +99,13 @@ function gerarAscArt(ctx){
             {
                 pxl = greyscalePixel(pxl);
             }
-            var v =  k_means_clustering(pxl);
             var char = ' ';
             if(model == 1)
-                char = model_1(v);
+                char = model_1(pxl);
             if(model == 2)
-                char = model_2(v);
+                char = model_2(pxl);
+            if(model == 3)
+                char = model_3(pxl);
             ascArt+=validBackspace(char);
         }
         ascArt+='\n';
@@ -108,8 +116,9 @@ function gerarAscArt(ctx){
 
 }
 
-function model_1(v)
+function model_1(pxl)
 {
+    var v =  k_means_clustering(pxl,conjuntoColorido);
     var character= '';
     if(v==1){
         if(rand()%2==0)
@@ -210,8 +219,9 @@ function model_1(v)
     return character;
 }
 
-function model_2(v)
+function model_2(pxl)
 {
+    var v =  k_means_clustering(pxl,conjuntoColorido);
     var character= '';
     if(v==1){
         if(rand()%2==0)
@@ -293,6 +303,26 @@ function model_2(v)
         }
     }else{
         character+= ' ';
+    }
+    return character;
+}
+
+
+function model_3(pxl)
+{
+    var v =  k_means_clustering(pxl,conjuntoGreyscale);
+    var character= '';
+    if(v==1)
+    {
+        character= '#';
+    }
+    else if(v==2)
+    {
+        character= 'O';
+    }
+    else if(v==3)
+    {
+        character= ' ';
     }
     return character;
 }
