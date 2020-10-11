@@ -29,11 +29,23 @@ let conjuntoGreyscale =[
 let conjuntoCodigos = {
     1: ['{','}','(',')','[',']',';','.',',','x','&','!','$','%','+','-','=','#','@','*'],
     2: ['if','to','xp','&p','p=','i+','i-','to','do','as','in','is','rw','mv','*p','**','*i','or','py','cs','rb'],
-    3: ['for','ind','aux','var','let','red','int','bit','new','out','try','num','ref','cmd','std','mem','git','and','xor','asm','jar','c++','map','use','set','ios'],
-    4: ['then','here','goto','char','byte','bool','p[i]','x[k]','null','void','this','uint','true','else','base', 'long','lock','case','aloc','push','pull','enum','list'],
-    5: ['class','throw','while','false','float','fixed','using','break','sbyte','ulong','event','stdin','maloc','catch','const','ilist','stack','queue','tuple','regex','mutex'],
-    6: ['string','double','static','switch','return','typeof','object','stdout','sizeof','struct','delete','vector','memory','locale','iosfwd','limits','thread','future','random'],
-    7: ['include','virtual','decimal','default','checked','finally','foreach','private','replace','virtual','extern','istream','ostream','numeric'],
+    3: ['for','ind','aux','var','let','red','int','bit','new','out','try','num',
+    	'ref','cmd','std','mem','git','and','xor','asm','jar','c++','map','use',
+    	'set','ios'],
+    4: ['then','here','goto','char','byte','bool','p[i]','x[k]','null','void',
+    	'this','uint','true','else','base', 'long','lock','case','aloc','push',
+    	'pull','enum','list'],
+    5: ['class','throw','while','false','float','fixed','using','break','sbyte',
+    	'ulong','event','stdin','maloc','catch','const','ilist','stack','queue',
+	'tuple','regex','mutex'],
+    6: ['string','double','static','switch','return','typeof','object','stdout',
+    	'sizeof','struct','delete','vector','memory','locale','iosfwd','limits',
+    	'thread','future','random'],
+    7: ['include','virtual','decimal','default','checked','finally','foreach',
+    	'private','replace','virtual','extern','istream','ostream','numeric',
+    	'int x=1','this->x','list.to'
+    	],
+    11: ['while(true)'],
     open: ['{','[','('],
     close: ['}',']',')'],
 }
@@ -372,6 +384,10 @@ function model_3(ctx)
                     {
                         i++;
                         linhaResult += gerarPadrao(2);
+                    }
+                    else if(escolha==3)
+                    {
+                    	linhaResult += ' ';
                     }
                     else
                     {
