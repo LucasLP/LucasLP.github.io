@@ -1,5 +1,5 @@
 # LucasLP
-My Blog/Site for release my own applications.
+My Blog for release my own small applications.
 
 
 check http://lucaslp.github.io
