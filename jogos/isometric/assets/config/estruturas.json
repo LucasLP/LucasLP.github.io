@@ -1,0 +1,1491 @@
+[
+  {
+    "categoria": "infraestrutura",
+    "label": "Infraestrutura",
+    "icone": "building",
+    "cor": "#9ed2ff",
+    "opcoes": [
+      {
+        "id": "casa",
+        "label": "Casa",
+        "icone": "house",
+        "descricao": "Abriga 10 pessoas. Crie camponeses aqui.",
+        "imagem": {
+          "arquivo": "assets/edificios/casa-1.png"
+        },
+        "imagens": [
+          {
+            "arquivo": "assets/edificios/casa-1.png",
+            "escala": 0.773
+          },
+          {
+            "arquivo": "assets/edificios/casa-2.png",
+            "escala": 0.803
+          },
+          {
+            "arquivo": "assets/edificios/casa-3.png",
+            "escala": 0.848
+          },
+          {
+            "arquivo": "assets/edificios/casa-4.png",
+            "escala": 0.879
+          },
+          {
+            "arquivo": "assets/edificios/casa-5.png",
+            "escala": 0.879
+          },
+          {
+            "arquivo": "assets/edificios/casa-6.png",
+            "escala": 0.955
+          }
+        ],
+        "escalaImagem": 0.773,
+        "ancoragem": "base",
+        "contribuicaoArmazenamento": {
+          "populacao": 10
+        },
+        "custoConstrucao": [
+          {
+            "recurso": "madeira",
+            "quantidade": 10
+          },
+          {
+            "recurso": "pedra",
+            "quantidade": 5
+          }
+        ],
+        "tempoConstrucaoS": 12,
+        "acoes": [
+          {
+            "id": "criar-pessoa",
+            "label": "Criar camponês",
+            "icone": "person",
+            "tipo": "criar-pessoa",
+            "personagemTipo": "camponês",
+            "custo": [
+              {
+                "recurso": "comida",
+                "quantidade": 10
+              },
+              {
+                "recurso": "populacao",
+                "quantidade": 1
+              }
+            ],
+            "descricao": "Um novo camponês nasce na casa."
+          }
+        ],
+        "vida": 260
+      },
+      {
+        "id": "armazenamento",
+        "label": "Armazém",
+        "icone": "warehouse",
+        "subopcoes": [
+          {
+            "id": "silo",
+            "label": "Silo",
+            "icone": "drumstick-bite",
+            "imagem": {
+              "arquivo": "assets/edificios/silo.png"
+            },
+            "escalaImagem": 0.75,
+            "ancoragem": "base",
+            "descricao": "+100 de limite de Comida.",
+            "contribuicaoArmazenamento": {
+              "comida": 100
+            },
+            "custoConstrucao": [
+              {
+                "recurso": "madeira",
+                "quantidade": 20
+              }
+            ],
+            "tempoConstrucaoS": 10,
+            "vida": 200
+          },
+          {
+            "id": "deposito",
+            "label": "Depósito",
+            "icone": "hammer",
+            "imagem": {
+              "arquivo": "assets/edificios/deposito.png"
+            },
+            "escalaImagem": 1.136,
+            "ancoragem": "base",
+            "descricao": "+100 de limite de Ferro e Pedra.",
+            "contribuicaoArmazenamento": {
+              "ferro": 100,
+              "pedra": 100
+            },
+            "custoConstrucao": [
+              {
+                "recurso": "madeira",
+                "quantidade": 15
+              },
+              {
+                "recurso": "pedra",
+                "quantidade": 10
+              }
+            ],
+            "tempoConstrucaoS": 10,
+            "vida": 220
+          },
+          {
+            "id": "serraria",
+            "label": "Serraria",
+            "icone": "tree",
+            "imagem": {
+              "arquivo": "assets/edificios/serraria.png"
+            },
+            "escalaImagem": 0.938,
+            "ancoragem": "base",
+            "descricao": "+100 de limite de Madeira. Treina construtores.",
+            "contribuicaoArmazenamento": {
+              "madeira": 100
+            },
+            "custoConstrucao": [
+              {
+                "recurso": "madeira",
+                "quantidade": 20
+              }
+            ],
+            "tempoConstrucaoS": 10,
+            "vida": 200,
+            "acoes": [
+              {
+                "id": "treinar-construtor",
+                "label": "Treinar construtor",
+                "icone": "helmet-safety",
+                "tipo": "treinar",
+                "personagemTipo": "construtor",
+                "custo": [
+                  {
+                    "recurso": "comida",
+                    "quantidade": 15
+                  },
+                  {
+                    "recurso": "madeira",
+                    "quantidade": 10
+                  },
+                  {
+                    "recurso": "populacao",
+                    "quantidade": 1
+                  }
+                ],
+                "descricao": "Construtor: obras e consertos 2,2× mais rápidos."
+              }
+            ]
+          },
+          {
+            "id": "armazem-geral",
+            "label": "Armazém",
+            "icone": "warehouse",
+            "imagem": {
+              "arquivo": "assets/edificios/armazem-geral.png"
+            },
+            "escalaImagem": 1.0,
+            "ancoragem": "base",
+            "descricao": "+100 de limite de Comida, Madeira, Pedra e Ferro.",
+            "contribuicaoArmazenamento": {
+              "comida": 100,
+              "ferro": 100,
+              "madeira": 100,
+              "pedra": 100
+            },
+            "custoConstrucao": [
+              {
+                "recurso": "madeira",
+                "quantidade": 40
+              },
+              {
+                "recurso": "pedra",
+                "quantidade": 20
+              }
+            ],
+            "tempoConstrucaoS": 18,
+            "vida": 320
+          }
+        ]
+      },
+      {
+        "id": "hospital",
+        "label": "Hospital",
+        "icone": "hospital",
+        "imagem": {
+          "arquivo": "assets/edificios/hospital.png"
+        },
+        "escalaImagem": 0.875,
+        "ancoragem": "base",
+        "descricao": "Cura quem estiver por perto (raio 5).",
+        "custoConstrucao": [
+          {
+            "recurso": "madeira",
+            "quantidade": 30
+          },
+          {
+            "recurso": "pedra",
+            "quantidade": 30
+          },
+          {
+            "recurso": "ouro",
+            "quantidade": 5
+          }
+        ],
+        "tempoConstrucaoS": 25,
+        "efeitos": {
+          "cura": {
+            "porSegundo": 0.5,
+            "raio": 5
+          }
+        },
+        "acoes": [
+          {
+            "id": "curar",
+            "label": "Curar todos",
+            "icone": "kit-medical",
+            "tipo": "curar",
+            "custo": [
+              {
+                "recurso": "comida",
+                "quantidade": 10
+              }
+            ],
+            "descricao": "Cura totalmente todos num raio de 6."
+          },
+          {
+            "id": "treinar-curandeiro",
+            "label": "Treinar curandeiro",
+            "icone": "kit-medical",
+            "tipo": "treinar",
+            "custo": [
+              {
+                "recurso": "comida",
+                "quantidade": 20
+              },
+              {
+                "recurso": "ouro",
+                "quantidade": 10
+              },
+              {
+                "recurso": "populacao",
+                "quantidade": 1
+              }
+            ],
+            "personagemTipo": "curandeiro",
+            "descricao": "Curandeiro: cura sozinho os aliados por perto."
+          }
+        ],
+        "vida": 300
+      },
+      {
+        "id": "industria",
+        "label": "Indústria",
+        "icone": "industry",
+        "imagem": {
+          "arquivo": "assets/edificios/industria.png"
+        },
+        "escalaImagem": 0.875,
+        "ancoragem": "base",
+        "descricao": "Transforma madeira e ferro em ouro. Trabalhadores aceleram.",
+        "custoConstrucao": [
+          {
+            "recurso": "madeira",
+            "quantidade": 40
+          },
+          {
+            "recurso": "pedra",
+            "quantidade": 20
+          },
+          {
+            "recurso": "ferro",
+            "quantidade": 10
+          }
+        ],
+        "tempoConstrucaoS": 25,
+        "producao": {
+          "recurso": "ouro",
+          "porSegundo": 0.04,
+          "porTrabalhador": 0.05,
+          "maxTrabalhadores": 3,
+          "fonte": "livre",
+          "consumo": [
+            {
+              "recurso": "madeira",
+              "quantidade": 0.2
+            },
+            {
+              "recurso": "ferro",
+              "quantidade": 0.1
+            }
+          ]
+        },
+        "vida": 320
+      },
+      {
+        "id": "mercado",
+        "label": "Mercado",
+        "icone": "scale-balanced",
+        "imagem": {
+          "arquivo": "assets/edificios/mercado.png"
+        },
+        "escalaImagem": 0.848,
+        "ancoragem": "base",
+        "descricao": "Troque recursos por ouro e vice-versa.",
+        "custoConstrucao": [
+          {
+            "recurso": "madeira",
+            "quantidade": 30
+          },
+          {
+            "recurso": "pedra",
+            "quantidade": 10
+          }
+        ],
+        "tempoConstrucaoS": 15,
+        "acoes": [
+          {
+            "id": "vender-madeira",
+            "label": "Vender madeira",
+            "icone": "coins",
+            "tipo": "trocar",
+            "custo": [
+              {
+                "recurso": "madeira",
+                "quantidade": 20
+              }
+            ],
+            "recebe": [
+              {
+                "recurso": "ouro",
+                "quantidade": 5
+              }
+            ]
+          },
+          {
+            "id": "vender-pedra",
+            "label": "Vender pedra",
+            "icone": "coins",
+            "tipo": "trocar",
+            "custo": [
+              {
+                "recurso": "pedra",
+                "quantidade": 20
+              }
+            ],
+            "recebe": [
+              {
+                "recurso": "ouro",
+                "quantidade": 6
+              }
+            ]
+          },
+          {
+            "id": "vender-ferro",
+            "label": "Vender ferro",
+            "icone": "coins",
+            "tipo": "trocar",
+            "custo": [
+              {
+                "recurso": "ferro",
+                "quantidade": 10
+              }
+            ],
+            "recebe": [
+              {
+                "recurso": "ouro",
+                "quantidade": 6
+              }
+            ]
+          },
+          {
+            "id": "comprar-comida",
+            "label": "Comprar comida",
+            "icone": "cart-shopping",
+            "tipo": "trocar",
+            "custo": [
+              {
+                "recurso": "ouro",
+                "quantidade": 6
+              }
+            ],
+            "recebe": [
+              {
+                "recurso": "comida",
+                "quantidade": 20
+              }
+            ]
+          },
+          {
+            "id": "comprar-ferro",
+            "label": "Comprar ferro",
+            "icone": "cart-shopping",
+            "tipo": "trocar",
+            "custo": [
+              {
+                "recurso": "ouro",
+                "quantidade": 8
+              }
+            ],
+            "recebe": [
+              {
+                "recurso": "ferro",
+                "quantidade": 10
+              }
+            ]
+          }
+        ],
+        "vida": 240
+      },
+      {
+        "id": "poco",
+        "label": "Poço",
+        "icone": "bucket",
+        "imagem": {
+          "arquivo": "assets/edificios/poco.png"
+        },
+        "escalaImagem": 0.727,
+        "ancoragem": "base",
+        "descricao": "Água: +25% de produção nas plantações num raio de 3.",
+        "custoConstrucao": [
+          {
+            "recurso": "pedra",
+            "quantidade": 10
+          },
+          {
+            "recurso": "madeira",
+            "quantidade": 5
+          }
+        ],
+        "tempoConstrucaoS": 8,
+        "efeitos": {
+          "bonusPlantio": {
+            "fator": 1.25,
+            "raio": 3
+          }
+        },
+        "vida": 150
+      },
+      {
+        "id": "porto",
+        "label": "Porto",
+        "icone": "anchor",
+        "descricao": "Na beira do lago: pescadores trazem comida (rende conforme a pesca da água em volta). Treina pescadores.",
+        "imagem": {
+          "arquivo": "assets/edificios/porto.png"
+        },
+        "escalaImagem": 1.0,
+        "ancoragem": "base",
+        "exigeAgua": true,
+        "contribuicaoArmazenamento": {
+          "comida": 50
+        },
+        "custoConstrucao": [
+          {
+            "recurso": "madeira",
+            "quantidade": 40
+          },
+          {
+            "recurso": "pedra",
+            "quantidade": 10
+          }
+        ],
+        "tempoConstrucaoS": 25,
+        "producao": {
+          "recurso": "comida",
+          "porSegundo": 0.02,
+          "porTrabalhador": 0.14,
+          "maxTrabalhadores": 3,
+          "fonte": "pesca"
+        },
+        "acoes": [
+          {
+            "id": "treinar-pescador",
+            "label": "Treinar pescador",
+            "icone": "fish",
+            "tipo": "treinar",
+            "personagemTipo": "pescador",
+            "custo": [
+              {
+                "recurso": "comida",
+                "quantidade": 10
+              },
+              {
+                "recurso": "madeira",
+                "quantidade": 10
+              },
+              {
+                "recurso": "populacao",
+                "quantidade": 1
+              }
+            ],
+            "descricao": "Pescador: pesca 2,4× mais."
+          }
+        ],
+        "vida": 260
+      },
+      {
+        "id": "ferraria",
+        "label": "Ferraria",
+        "icone": "hammer",
+        "descricao": "Forja melhorias de ferramentas, armas, armaduras, arcos e botas. Ferreiros trabalhando aqui aceleram. Treina ferreiros.",
+        "imagem": {
+          "arquivo": "assets/edificios/ferraria.png"
+        },
+        "escalaImagem": 0.969,
+        "ancoragem": "base",
+        "custoConstrucao": [
+          {
+            "recurso": "madeira",
+            "quantidade": 40
+          },
+          {
+            "recurso": "pedra",
+            "quantidade": 30
+          },
+          {
+            "recurso": "ferro",
+            "quantidade": 15
+          }
+        ],
+        "tempoConstrucaoS": 30,
+        "acoes": [
+          {
+            "id": "forjar-ferramentas",
+            "label": "Ferramentas",
+            "icone": "screwdriver-wrench",
+            "tipo": "pesquisar",
+            "melhoria": "ferramentas",
+            "tempoS": 30,
+            "custo": [
+              {
+                "recurso": "ferro",
+                "quantidade": 12
+              },
+              {
+                "recurso": "madeira",
+                "quantidade": 10
+              }
+            ],
+            "descricao": "+20% na produção de todo trabalhador por nível (até 5)."
+          },
+          {
+            "id": "forjar-armas",
+            "label": "Armas",
+            "icone": "khanda",
+            "tipo": "pesquisar",
+            "melhoria": "armas",
+            "tempoS": 35,
+            "custo": [
+              {
+                "recurso": "ferro",
+                "quantidade": 12
+              },
+              {
+                "recurso": "ouro",
+                "quantidade": 5
+              }
+            ],
+            "descricao": "+1 de ataque pra soldados e torres por nível (até 5)."
+          },
+          {
+            "id": "forjar-armaduras",
+            "label": "Armaduras",
+            "icone": "shield-halved",
+            "tipo": "pesquisar",
+            "melhoria": "armaduras",
+            "tempoS": 35,
+            "custo": [
+              {
+                "recurso": "ferro",
+                "quantidade": 15
+              },
+              {
+                "recurso": "pedra",
+                "quantidade": 8
+              }
+            ],
+            "descricao": "+1 de defesa pra todos da vila por nível (até 5)."
+          },
+          {
+            "id": "forjar-arcos",
+            "label": "Arcos e bestas",
+            "icone": "bullseye",
+            "tipo": "pesquisar",
+            "melhoria": "arcos",
+            "tempoS": 30,
+            "custo": [
+              {
+                "recurso": "madeira",
+                "quantidade": 15
+              },
+              {
+                "recurso": "ferro",
+                "quantidade": 5
+              }
+            ],
+            "descricao": "+0,5 de alcance pra arqueiros e besteiros por nível (até 3)."
+          },
+          {
+            "id": "forjar-ferraduras",
+            "label": "Botas e ferraduras",
+            "icone": "horse",
+            "tipo": "pesquisar",
+            "melhoria": "ferraduras",
+            "tempoS": 30,
+            "custo": [
+              {
+                "recurso": "ferro",
+                "quantidade": 10
+              },
+              {
+                "recurso": "ouro",
+                "quantidade": 4
+              }
+            ],
+            "descricao": "+8% de velocidade pra todos da vila por nível (até 3)."
+          },
+          {
+            "id": "treinar-ferreiro",
+            "label": "Treinar ferreiro",
+            "icone": "fire-flame-curved",
+            "tipo": "treinar",
+            "personagemTipo": "ferreiro",
+            "custo": [
+              {
+                "recurso": "comida",
+                "quantidade": 15
+              },
+              {
+                "recurso": "ferro",
+                "quantidade": 5
+              },
+              {
+                "recurso": "populacao",
+                "quantidade": 1
+              }
+            ],
+            "descricao": "Ferreiro: forja 2,4× mais rápido."
+          }
+        ],
+        "vida": 320
+      }
+    ]
+  },
+  {
+    "categoria": "fazenda",
+    "label": "Fazenda",
+    "icone": "seedling",
+    "cor": "#8bc34a",
+    "opcoes": [
+      {
+        "id": "plantacao",
+        "label": "Plantação",
+        "icone": "seedling",
+        "descricao": "Produz comida. Mande camponeses cultivar (clique direito).",
+        "imagem": {
+          "arquivo": "assets/edificios/plantacao.png"
+        },
+        "ancoragem": "base",
+        "custoConstrucao": [
+          {
+            "recurso": "madeira",
+            "quantidade": 10
+          }
+        ],
+        "tempoConstrucaoS": 6,
+        "terrenosPermitidos": [
+          "pradaria",
+          "floresta",
+          "estepe",
+          "deserto",
+          "praia",
+          "colina"
+        ],
+        "producao": {
+          "recurso": "comida",
+          "porSegundo": 0.02,
+          "porTrabalhador": 0.12,
+          "maxTrabalhadores": 2,
+          "fonte": "plantio"
+        },
+        "acoes": [
+          {
+            "id": "colher",
+            "label": "Colher safra",
+            "icone": "wheat-awn",
+            "tipo": "colher",
+            "descricao": "Colhe a safra madura na hora (+15 comida)."
+          }
+        ],
+        "vida": 80
+      },
+      {
+        "id": "pasto",
+        "label": "Pasto",
+        "icone": "cow",
+        "imagem": {
+          "arquivo": "assets/edificios/pasto.png"
+        },
+        "escalaImagem": 0.875,
+        "ancoragem": "base",
+        "descricao": "Cria ovelhas e produz comida devagar.",
+        "custoConstrucao": [
+          {
+            "recurso": "madeira",
+            "quantidade": 25
+          }
+        ],
+        "tempoConstrucaoS": 12,
+        "producao": {
+          "recurso": "comida",
+          "porSegundo": 0.05,
+          "porTrabalhador": 0.06,
+          "maxTrabalhadores": 1,
+          "fonte": "livre"
+        },
+        "efeitos": {
+          "animais": {
+            "tipo": "ovelha",
+            "maximo": 3
+          }
+        },
+        "vida": 120
+      },
+      {
+        "id": "celeiro",
+        "label": "Celeiro",
+        "icone": "box",
+        "descricao": "+150 de limite de Comida.",
+        "imagem": {
+          "arquivo": "assets/edificios/celeiro-2.png"
+        },
+        "imagens": [
+          {
+            "arquivo": "assets/edificios/celeiro-2.png",
+            "escala": 0.985
+          },
+          {
+            "arquivo": "assets/edificios/celeiro-3.png",
+            "escala": 0.955
+          }
+        ],
+        "escalaImagem": 0.985,
+        "ancoragem": "base",
+        "contribuicaoArmazenamento": {
+          "comida": 150
+        },
+        "custoConstrucao": [
+          {
+            "recurso": "madeira",
+            "quantidade": 30
+          }
+        ],
+        "tempoConstrucaoS": 14,
+        "vida": 240,
+        "acoes": [
+          {
+            "id": "treinar-fazendeiro",
+            "label": "Treinar fazendeiro",
+            "icone": "wheat-awn",
+            "tipo": "treinar",
+            "custo": [
+              {
+                "recurso": "comida",
+                "quantidade": 15
+              },
+              {
+                "recurso": "populacao",
+                "quantidade": 1
+              }
+            ],
+            "personagemTipo": "fazendeiro",
+            "descricao": "Fazendeiro: cultiva e colhe mais rápido."
+          }
+        ]
+      },
+      {
+        "id": "madeireira",
+        "label": "Madeireira",
+        "icone": "tree",
+        "imagem": {
+          "arquivo": "assets/edificios/madeireira.png"
+        },
+        "escalaImagem": 0.875,
+        "ancoragem": "base",
+        "descricao": "Recolhe madeira das árvores num raio de 4.",
+        "custoConstrucao": [
+          {
+            "recurso": "madeira",
+            "quantidade": 20
+          },
+          {
+            "recurso": "pedra",
+            "quantidade": 5
+          }
+        ],
+        "tempoConstrucaoS": 12,
+        "producao": {
+          "recurso": "madeira",
+          "porSegundo": 0.08,
+          "porTrabalhador": 0.1,
+          "maxTrabalhadores": 3,
+          "fonte": "arvores",
+          "raio": 4
+        },
+        "vida": 180,
+        "acoes": [
+          {
+            "id": "treinar-lenhador",
+            "label": "Treinar lenhador",
+            "icone": "tree",
+            "tipo": "treinar",
+            "custo": [
+              {
+                "recurso": "comida",
+                "quantidade": 15
+              },
+              {
+                "recurso": "madeira",
+                "quantidade": 5
+              },
+              {
+                "recurso": "populacao",
+                "quantidade": 1
+              }
+            ],
+            "personagemTipo": "lenhador",
+            "descricao": "Lenhador: corta madeira bem mais rápido."
+          }
+        ]
+      },
+      {
+        "id": "moinho",
+        "label": "Moinho",
+        "icone": "fan",
+        "imagem": {
+          "arquivo": "assets/edificios/moinho.png"
+        },
+        "escalaImagem": 0.812,
+        "ancoragem": "base",
+        "descricao": "+50% de produção nas plantações num raio de 4.",
+        "custoConstrucao": [
+          {
+            "recurso": "madeira",
+            "quantidade": 30
+          },
+          {
+            "recurso": "pedra",
+            "quantidade": 15
+          }
+        ],
+        "tempoConstrucaoS": 18,
+        "efeitos": {
+          "bonusPlantio": {
+            "fator": 1.5,
+            "raio": 4
+          }
+        },
+        "vida": 220
+      }
+    ]
+  },
+  {
+    "categoria": "mineracao",
+    "label": "Mineração",
+    "icone": "mountain",
+    "cor": "#c9a24b",
+    "opcoes": [
+      {
+        "id": "mina-ferro",
+        "label": "Mina de Ferro",
+        "icone": "cubes",
+        "imagem": {
+          "arquivo": "assets/edificios/mina-ferro.png"
+        },
+        "escalaImagem": 0.875,
+        "ancoragem": "base",
+        "descricao": "Extrai o ferro do subsolo (esta posição e vizinhas). Rende muito mais em montanhas.",
+        "custoConstrucao": [
+          {
+            "recurso": "madeira",
+            "quantidade": 20
+          },
+          {
+            "recurso": "pedra",
+            "quantidade": 10
+          }
+        ],
+        "tempoConstrucaoS": 18,
+        "terrenosPermitidos": [
+          "pradaria",
+          "floresta",
+          "estepe",
+          "deserto",
+          "praia",
+          "colina",
+          "montanha"
+        ],
+        "producao": {
+          "recurso": "ferro",
+          "porSegundo": 0.03,
+          "porTrabalhador": 0.1,
+          "maxTrabalhadores": 4,
+          "fonte": "deposito",
+          "deposito": "ferro"
+        },
+        "vida": 300,
+        "acoes": [
+          {
+            "id": "treinar-minerador",
+            "label": "Treinar minerador",
+            "icone": "gem",
+            "tipo": "treinar",
+            "custo": [
+              {
+                "recurso": "comida",
+                "quantidade": 15
+              },
+              {
+                "recurso": "ferro",
+                "quantidade": 5
+              },
+              {
+                "recurso": "populacao",
+                "quantidade": 1
+              }
+            ],
+            "personagemTipo": "minerador",
+            "descricao": "Minerador: rende o dobro minerando."
+          }
+        ]
+      },
+      {
+        "id": "mina-ouro",
+        "label": "Mina de Ouro",
+        "icone": "gem",
+        "imagem": {
+          "arquivo": "assets/edificios/mina-ouro.png"
+        },
+        "escalaImagem": 0.875,
+        "ancoragem": "base",
+        "descricao": "Extrai o ouro do subsolo. Montanhas e desertos costumam ter mais.",
+        "custoConstrucao": [
+          {
+            "recurso": "madeira",
+            "quantidade": 30
+          },
+          {
+            "recurso": "pedra",
+            "quantidade": 20
+          }
+        ],
+        "tempoConstrucaoS": 22,
+        "terrenosPermitidos": [
+          "pradaria",
+          "floresta",
+          "estepe",
+          "deserto",
+          "praia",
+          "colina",
+          "montanha"
+        ],
+        "producao": {
+          "recurso": "ouro",
+          "porSegundo": 0.015,
+          "porTrabalhador": 0.05,
+          "maxTrabalhadores": 4,
+          "fonte": "deposito",
+          "deposito": "ouro"
+        },
+        "vida": 300,
+        "acoes": [
+          {
+            "id": "treinar-minerador",
+            "label": "Treinar minerador",
+            "icone": "gem",
+            "tipo": "treinar",
+            "custo": [
+              {
+                "recurso": "comida",
+                "quantidade": 15
+              },
+              {
+                "recurso": "ferro",
+                "quantidade": 5
+              },
+              {
+                "recurso": "populacao",
+                "quantidade": 1
+              }
+            ],
+            "personagemTipo": "minerador",
+            "descricao": "Minerador: rende o dobro minerando."
+          }
+        ]
+      },
+      {
+        "id": "pedreira",
+        "label": "Pedreira",
+        "icone": "mountain",
+        "imagem": {
+          "arquivo": "assets/edificios/pedreira.png"
+        },
+        "escalaImagem": 0.969,
+        "ancoragem": "base",
+        "descricao": "Extrai pedra do subsolo.",
+        "custoConstrucao": [
+          {
+            "recurso": "madeira",
+            "quantidade": 15
+          }
+        ],
+        "tempoConstrucaoS": 12,
+        "terrenosPermitidos": [
+          "pradaria",
+          "floresta",
+          "estepe",
+          "deserto",
+          "praia",
+          "colina",
+          "montanha"
+        ],
+        "producao": {
+          "recurso": "pedra",
+          "porSegundo": 0.05,
+          "porTrabalhador": 0.12,
+          "maxTrabalhadores": 4,
+          "fonte": "deposito",
+          "deposito": "pedra"
+        },
+        "vida": 220,
+        "acoes": [
+          {
+            "id": "treinar-minerador",
+            "label": "Treinar minerador",
+            "icone": "gem",
+            "tipo": "treinar",
+            "custo": [
+              {
+                "recurso": "comida",
+                "quantidade": 15
+              },
+              {
+                "recurso": "ferro",
+                "quantidade": 5
+              },
+              {
+                "recurso": "populacao",
+                "quantidade": 1
+              }
+            ],
+            "personagemTipo": "minerador",
+            "descricao": "Minerador: rende o dobro minerando."
+          }
+        ]
+      },
+      {
+        "id": "fundicao",
+        "label": "Fundição",
+        "icone": "fire",
+        "imagem": {
+          "arquivo": "assets/edificios/fundicao.png"
+        },
+        "escalaImagem": 0.875,
+        "ancoragem": "base",
+        "descricao": "Funde pedra em ferro. As melhorias agora são forjadas na Ferraria.",
+        "custoConstrucao": [
+          {
+            "recurso": "madeira",
+            "quantidade": 25
+          },
+          {
+            "recurso": "pedra",
+            "quantidade": 30
+          }
+        ],
+        "tempoConstrucaoS": 20,
+        "producao": {
+          "recurso": "ferro",
+          "porSegundo": 0.04,
+          "porTrabalhador": 0.04,
+          "maxTrabalhadores": 2,
+          "fonte": "livre",
+          "consumo": [
+            {
+              "recurso": "pedra",
+              "quantidade": 0.15
+            },
+            {
+              "recurso": "madeira",
+              "quantidade": 0.08
+            }
+          ]
+        },
+        "vida": 320
+      }
+    ]
+  },
+  {
+    "categoria": "militar",
+    "label": "Militar",
+    "icone": "shield-halved",
+    "cor": "#e57373",
+    "opcoes": [
+      {
+        "id": "quartel",
+        "label": "Quartel",
+        "icone": "chess-rook",
+        "imagem": {
+          "arquivo": "assets/edificios/quartel.png"
+        },
+        "escalaImagem": 0.969,
+        "ancoragem": "base",
+        "descricao": "Treina guerreiros, arqueiros, lanceiros, besteiros e cavaleiros.",
+        "custoConstrucao": [
+          {
+            "recurso": "madeira",
+            "quantidade": 40
+          },
+          {
+            "recurso": "pedra",
+            "quantidade": 30
+          },
+          {
+            "recurso": "ferro",
+            "quantidade": 10
+          }
+        ],
+        "tempoConstrucaoS": 25,
+        "acoes": [
+          {
+            "id": "treinar-guerreiro",
+            "label": "Treinar guerreiro",
+            "icone": "khanda",
+            "tipo": "treinar",
+            "personagemTipo": "guerreiro",
+            "custo": [
+              {
+                "recurso": "comida",
+                "quantidade": 15
+              },
+              {
+                "recurso": "ferro",
+                "quantidade": 10
+              },
+              {
+                "recurso": "populacao",
+                "quantidade": 1
+              }
+            ]
+          },
+          {
+            "id": "treinar-arqueiro",
+            "label": "Treinar arqueiro",
+            "icone": "bullseye",
+            "tipo": "treinar",
+            "personagemTipo": "arqueiro",
+            "custo": [
+              {
+                "recurso": "comida",
+                "quantidade": 15
+              },
+              {
+                "recurso": "madeira",
+                "quantidade": 15
+              },
+              {
+                "recurso": "populacao",
+                "quantidade": 1
+              }
+            ]
+          },
+          {
+            "id": "treinar-lanceiro",
+            "label": "Treinar lanceiro",
+            "icone": "shield-halved",
+            "tipo": "treinar",
+            "custo": [
+              {
+                "recurso": "comida",
+                "quantidade": 15
+              },
+              {
+                "recurso": "madeira",
+                "quantidade": 10
+              },
+              {
+                "recurso": "ferro",
+                "quantidade": 5
+              },
+              {
+                "recurso": "populacao",
+                "quantidade": 1
+              }
+            ],
+            "personagemTipo": "lanceiro",
+            "descricao": "Lanceiro: defesa alta e lança comprida."
+          },
+          {
+            "id": "treinar-besteiro",
+            "label": "Treinar besteiro",
+            "icone": "crosshairs",
+            "tipo": "treinar",
+            "personagemTipo": "besteiro",
+            "custo": [
+              {
+                "recurso": "comida",
+                "quantidade": 20
+              },
+              {
+                "recurso": "madeira",
+                "quantidade": 10
+              },
+              {
+                "recurso": "ferro",
+                "quantidade": 10
+              },
+              {
+                "recurso": "populacao",
+                "quantidade": 1
+              }
+            ],
+            "descricao": "Besteiro: alcance longo e dano alto, recarga lenta."
+          },
+          {
+            "id": "treinar-cavaleiro",
+            "label": "Treinar cavaleiro",
+            "icone": "horse",
+            "tipo": "treinar",
+            "custo": [
+              {
+                "recurso": "comida",
+                "quantidade": 25
+              },
+              {
+                "recurso": "ferro",
+                "quantidade": 15
+              },
+              {
+                "recurso": "ouro",
+                "quantidade": 10
+              },
+              {
+                "recurso": "populacao",
+                "quantidade": 1
+              }
+            ],
+            "personagemTipo": "cavaleiro",
+            "descricao": "Cavaleiro: rápido e muito forte."
+          }
+        ],
+        "vida": 420
+      },
+      {
+        "id": "torre-vigia",
+        "label": "Torre de vigia",
+        "icone": "tower-observation",
+        "imagem": {
+          "arquivo": "assets/edificios/torre-vigia.png"
+        },
+        "escalaImagem": 0.594,
+        "ancoragem": "base",
+        "descricao": "Enxerga longe (raio 10), atira em quem chega perto e treina exploradores.",
+        "custoConstrucao": [
+          {
+            "recurso": "madeira",
+            "quantidade": 25
+          },
+          {
+            "recurso": "pedra",
+            "quantidade": 10
+          }
+        ],
+        "tempoConstrucaoS": 15,
+        "efeitos": {
+          "raioVisao": 10,
+          "defesa": {
+            "dano": 2,
+            "raio": 6,
+            "intervaloS": 1.5,
+            "projetil": "flecha"
+          }
+        },
+        "vida": 220,
+        "acoes": [
+          {
+            "id": "treinar-explorador",
+            "label": "Treinar explorador",
+            "icone": "binoculars",
+            "tipo": "treinar",
+            "personagemTipo": "explorador",
+            "custo": [
+              {
+                "recurso": "comida",
+                "quantidade": 15
+              },
+              {
+                "recurso": "madeira",
+                "quantidade": 5
+              },
+              {
+                "recurso": "populacao",
+                "quantidade": 1
+              }
+            ],
+            "descricao": "Explorador: visão enorme e rápido; pode explorar sozinho."
+          }
+        ]
+      },
+      {
+        "id": "torre-arqueiros",
+        "label": "Torre de arqueiros",
+        "icone": "chess-rook",
+        "imagem": {
+          "arquivo": "assets/edificios/torre-arqueiros.png"
+        },
+        "escalaImagem": 0.656,
+        "ancoragem": "base",
+        "custoConstrucao": [
+          {
+            "recurso": "madeira",
+            "quantidade": 40
+          },
+          {
+            "recurso": "pedra",
+            "quantidade": 25
+          }
+        ],
+        "tempoConstrucaoS": 22,
+        "vida": 320,
+        "efeitos": {
+          "raioVisao": 8,
+          "defesa": {
+            "dano": 4,
+            "raio": 7,
+            "intervaloS": 1.1,
+            "projetil": "flecha"
+          }
+        },
+        "descricao": "Flechas rápidas num raio de 7. A defesa básica da vila."
+      },
+      {
+        "id": "torre-balista",
+        "label": "Torre de balista",
+        "icone": "crosshairs",
+        "imagem": {
+          "arquivo": "assets/edificios/torre-balista.png"
+        },
+        "escalaImagem": 0.688,
+        "ancoragem": "base",
+        "custoConstrucao": [
+          {
+            "recurso": "madeira",
+            "quantidade": 30
+          },
+          {
+            "recurso": "pedra",
+            "quantidade": 60
+          },
+          {
+            "recurso": "ferro",
+            "quantidade": 20
+          }
+        ],
+        "tempoConstrucaoS": 32,
+        "vida": 520,
+        "efeitos": {
+          "raioVisao": 9,
+          "defesa": {
+            "dano": 11,
+            "raio": 9.5,
+            "intervaloS": 2.8,
+            "projetil": "virote"
+          }
+        },
+        "descricao": "Virotes pesados de longe: derruba um guerreiro tribal em dois tiros."
+      },
+      {
+        "id": "forte",
+        "label": "Forte de madeira",
+        "icone": "shield",
+        "imagem": {
+          "arquivo": "assets/edificios/forte.png"
+        },
+        "escalaImagem": 0.906,
+        "ancoragem": "base",
+        "custoConstrucao": [
+          {
+            "recurso": "madeira",
+            "quantidade": 80
+          },
+          {
+            "recurso": "pedra",
+            "quantidade": 20
+          }
+        ],
+        "tempoConstrucaoS": 35,
+        "vida": 700,
+        "efeitos": {
+          "raioVisao": 7,
+          "cura": {
+            "porSegundo": 0.4,
+            "raio": 3
+          },
+          "defesa": {
+            "dano": 3,
+            "raio": 6,
+            "intervaloS": 1.2,
+            "projetil": "flecha",
+            "disparos": 3
+          }
+        },
+        "descricao": "Paliçada com guarnição: atira em até 3 alvos por vez, aguenta muito dano e trata os feridos em volta."
+      },
+      {
+        "id": "muralha",
+        "label": "Muralha",
+        "icone": "dungeon",
+        "descricao": "Parede de pedra: bloqueia a passagem. Construa em linha — os pedaços vizinhos se ligam sozinhos. As tribos precisam derrubar.",
+        "imagem": {
+          "arquivo": "assets/edificios/muralha-poste.png"
+        },
+        "escalaImagem": 1.0,
+        "ancoragem": "base",
+        "muralha": "parede",
+        "custoConstrucao": [
+          {
+            "recurso": "pedra",
+            "quantidade": 12
+          }
+        ],
+        "tempoConstrucaoS": 6,
+        "vida": 450
+      },
+      {
+        "id": "portao",
+        "label": "Portão",
+        "icone": "archway",
+        "descricao": "Passagem na muralha: o pessoal da vila passa, as tribos não (têm que derrubar).",
+        "imagem": {
+          "arquivo": "assets/edificios/portao-x.png"
+        },
+        "escalaImagem": 1.0,
+        "ancoragem": "base",
+        "muralha": "portao",
+        "custoConstrucao": [
+          {
+            "recurso": "pedra",
+            "quantidade": 20
+          },
+          {
+            "recurso": "madeira",
+            "quantidade": 10
+          }
+        ],
+        "tempoConstrucaoS": 10,
+        "vida": 400
+      }
+    ]
+  }
+]

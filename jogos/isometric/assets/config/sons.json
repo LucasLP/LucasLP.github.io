@@ -1,0 +1,312 @@
+{
+  "efeitos": {
+    "machado": {
+      "arquivos": [
+        "assets/sons/efeitos/machado-1.ogg",
+        "assets/sons/efeitos/machado-2.ogg",
+        "assets/sons/efeitos/machado-3.ogg"
+      ],
+      "volume": 0.55
+    },
+    "picareta": {
+      "arquivos": [
+        "assets/sons/efeitos/picareta-1.ogg",
+        "assets/sons/efeitos/picareta-2.ogg",
+        "assets/sons/efeitos/picareta-3.ogg"
+      ],
+      "volume": 0.45
+    },
+    "martelo": {
+      "arquivos": [
+        "assets/sons/efeitos/martelo-1.ogg",
+        "assets/sons/efeitos/martelo-2.ogg",
+        "assets/sons/efeitos/martelo-3.ogg"
+      ],
+      "volume": 0.5
+    },
+    "enxada": {
+      "arquivos": [
+        "assets/sons/efeitos/enxada-1.ogg",
+        "assets/sons/efeitos/enxada-2.ogg"
+      ],
+      "volume": 0.45
+    },
+    "serrote": {
+      "arquivos": [
+        "assets/sons/efeitos/serrote.ogg"
+      ],
+      "volume": 0.3
+    },
+    "espada": {
+      "arquivos": [
+        "assets/sons/efeitos/espada-1.ogg",
+        "assets/sons/efeitos/espada-2.ogg"
+      ],
+      "volume": 0.5
+    },
+    "golpe": {
+      "arquivos": [
+        "assets/sons/efeitos/golpe.ogg"
+      ],
+      "volume": 0.6
+    },
+    "flecha": {
+      "arquivos": [
+        "assets/sons/efeitos/espada-1.ogg"
+      ],
+      "volume": 0.25,
+      "taxa": 1.6
+    },
+    "moedas": {
+      "arquivos": [
+        "assets/sons/efeitos/moedas.ogg"
+      ],
+      "volume": 0.5
+    },
+    "ovelha": {
+      "arquivos": [
+        "assets/sons/efeitos/ovelha.ogg"
+      ],
+      "volume": 0.4
+    },
+    "vaca": {
+      "arquivos": [
+        "assets/sons/efeitos/vaca.ogg"
+      ],
+      "volume": 0.45
+    },
+    "galinha": {
+      "arquivos": [
+        "assets/sons/efeitos/galinha.ogg"
+      ],
+      "volume": 0.35
+    },
+    "lobo": {
+      "arquivos": [
+        "assets/sons/efeitos/lobo.ogg"
+      ],
+      "volume": 0.45
+    },
+    "rosnado": {
+      "arquivos": [
+        "assets/sons/efeitos/rosnado.ogg"
+      ],
+      "volume": 0.5
+    },
+    "fuga": {
+      "arquivos": [
+        "assets/sons/efeitos/fuga.ogg"
+      ],
+      "volume": 0.35
+    },
+    "trovao": {
+      "arquivos": [
+        "assets/sons/efeitos/trovao.ogg"
+      ],
+      "volume": 0.7
+    },
+    "ferido": {
+      "arquivos": [
+        "assets/sons/efeitos/ferido.ogg"
+      ],
+      "volume": 0.45
+    },
+    "sino": {
+      "arquivos": [
+        "assets/sons/efeitos/sino.ogg"
+      ],
+      "volume": 0.45
+    },
+    "agua": {
+      "arquivos": [
+        "assets/sons/efeitos/agua.ogg"
+      ],
+      "volume": 0.35
+    },
+    "urso": {
+      "arquivos": [
+        "assets/sons/efeitos/urso.ogg"
+      ],
+      "volume": 0.6
+    },
+    "javali": {
+      "arquivos": [
+        "assets/sons/efeitos/javali.ogg"
+      ],
+      "volume": 0.5
+    },
+    "raposa": {
+      "arquivos": [
+        "assets/sons/efeitos/raposa.ogg"
+      ],
+      "volume": 0.4
+    },
+    "cavalo": {
+      "arquivos": [
+        "assets/sons/efeitos/cavalo.ogg"
+      ],
+      "volume": 0.45
+    },
+    "porco": {
+      "arquivos": [
+        "assets/sons/efeitos/porco.ogg"
+      ],
+      "volume": 0.45
+    },
+    "pato": {
+      "arquivos": [
+        "assets/sons/efeitos/pato.ogg"
+      ],
+      "volume": 0.4
+    },
+    "bisao": {
+      "arquivos": [
+        "assets/sons/efeitos/bisao.ogg"
+      ],
+      "volume": 0.55
+    },
+    "escorpiao": {
+      "arquivos": [
+        "assets/sons/efeitos/escorpiao.ogg"
+      ],
+      "volume": 0.4
+    },
+    "tribo-grito": {
+      "arquivos": [
+        "assets/sons/efeitos/tribo-grito.ogg"
+      ],
+      "volume": 0.55
+    },
+    "tribo-grunhido": {
+      "arquivos": [
+        "assets/sons/efeitos/tribo-grunhido-1.ogg",
+        "assets/sons/efeitos/tribo-grunhido-2.ogg"
+      ],
+      "volume": 0.5
+    },
+    "trompa": {
+      "arquivos": [
+        "assets/sons/efeitos/trompa.ogg"
+      ],
+      "volume": 0.7
+    },
+    "tambor": {
+      "arquivos": [
+        "assets/sons/efeitos/tambor.ogg"
+      ],
+      "volume": 0.7
+    },
+    "balista": {
+      "arquivos": [
+        "assets/sons/efeitos/balista.ogg"
+      ],
+      "volume": 0.7
+    },
+    "impacto": {
+      "arquivos": [
+        "assets/sons/efeitos/impacto-1.ogg",
+        "assets/sons/efeitos/impacto-2.ogg"
+      ],
+      "volume": 0.55
+    },
+    "desmoronar": {
+      "arquivos": [
+        "assets/sons/efeitos/desmoronar.ogg"
+      ],
+      "volume": 0.8
+    },
+    "cura": {
+      "arquivos": [
+        "assets/sons/efeitos/cura.ogg"
+      ],
+      "volume": 0.4
+    }
+  },
+  "interface": {
+    "clique": {
+      "arquivos": [
+        "assets/sons/interface/clique.ogg"
+      ],
+      "volume": 0.5
+    },
+    "selecionar": {
+      "arquivos": [
+        "assets/sons/interface/selecionar.ogg"
+      ],
+      "volume": 0.45
+    },
+    "confirmar": {
+      "arquivos": [
+        "assets/sons/interface/confirmar.ogg"
+      ],
+      "volume": 0.5
+    },
+    "erro": {
+      "arquivos": [
+        "assets/sons/interface/erro.ogg"
+      ],
+      "volume": 0.5
+    },
+    "abrir": {
+      "arquivos": [
+        "assets/sons/interface/abrir.ogg"
+      ],
+      "volume": 0.4
+    },
+    "fechar": {
+      "arquivos": [
+        "assets/sons/interface/fechar.ogg"
+      ],
+      "volume": 0.4
+    },
+    "notificacao": {
+      "arquivos": [
+        "assets/sons/interface/notificacao.ogg"
+      ],
+      "volume": 0.35
+    },
+    "colocar": {
+      "arquivos": [
+        "assets/sons/interface/colocar.ogg"
+      ],
+      "volume": 0.5
+    },
+    "concluido": {
+      "arquivos": [
+        "assets/sons/interface/concluido.ogg"
+      ],
+      "volume": 0.5
+    },
+    "comando": {
+      "arquivos": [
+        "assets/sons/interface/clique.ogg"
+      ],
+      "volume": 0.35,
+      "taxa": 0.8
+    },
+    "salvar": {
+      "arquivos": [
+        "assets/sons/interface/salvar.ogg"
+      ],
+      "volume": 0.5
+    },
+    "carregar": {
+      "arquivos": [
+        "assets/sons/interface/carregar.ogg"
+      ],
+      "volume": 0.5
+    }
+  },
+  "ambiente": {
+    "passaros": "assets/sons/ambiente/passaros.ogg",
+    "grilos": "assets/sons/ambiente/grilos.ogg",
+    "chuva": "assets/sons/ambiente/chuva.ogg",
+    "tempestade": "assets/sons/ambiente/tempestade.ogg",
+    "vento": "assets/sons/ambiente/vento.ogg",
+    "riacho": "assets/sons/ambiente/riacho.ogg"
+  },
+  "musica": {
+    "dia": "assets/sons/musica/dia.ogg",
+    "noite": "assets/sons/musica/noite.ogg"
+  }
+}

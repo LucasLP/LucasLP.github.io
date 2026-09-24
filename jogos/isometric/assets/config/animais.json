@@ -1,0 +1,575 @@
+[
+  {
+    "id": "ovelha",
+    "label": "Ovelha",
+    "icone": "paw",
+    "sprite": {
+      "arquivo": "assets/animais/ovelha.png",
+      "quadroLargura": 84,
+      "quadroAltura": 56
+    },
+    "escala": 0.246,
+    "quadros": {
+      "parado": 0,
+      "andar": [
+        1,
+        0,
+        2,
+        0
+      ],
+      "comer": 3
+    },
+    "terrenos": [
+      "pradaria",
+      "estepe"
+    ],
+    "vida": 8,
+    "velocidade": 0.5,
+    "comida": 20,
+    "comportamento": "manso",
+    "densidade": 0.004,
+    "grupo": [
+      2,
+      4
+    ],
+    "som": "ovelha"
+  },
+  {
+    "id": "vaca",
+    "label": "Vaca",
+    "icone": "cow",
+    "sprite": {
+      "arquivo": "assets/animais/vaca.png",
+      "quadroLargura": 112,
+      "quadroAltura": 64
+    },
+    "escala": 0.35,
+    "quadros": {
+      "parado": 0,
+      "andar": [
+        1,
+        0,
+        2,
+        0
+      ],
+      "comer": 3
+    },
+    "terrenos": [
+      "pradaria"
+    ],
+    "vida": 14,
+    "velocidade": 0.4,
+    "comida": 35,
+    "comportamento": "manso",
+    "densidade": 0.0025,
+    "grupo": [
+      1,
+      3
+    ],
+    "som": "vaca"
+  },
+  {
+    "id": "galinha",
+    "label": "Galinha",
+    "icone": "feather",
+    "sprite": {
+      "arquivo": "assets/animais/galinha.png",
+      "quadroLargura": 48,
+      "quadroAltura": 44
+    },
+    "escala": 0.131,
+    "quadros": {
+      "parado": 0,
+      "andar": [
+        1,
+        0,
+        2,
+        0
+      ],
+      "comer": 3
+    },
+    "terrenos": [
+      "pradaria"
+    ],
+    "vida": 3,
+    "velocidade": 0.6,
+    "comida": 8,
+    "comportamento": "manso",
+    "densidade": 0.002,
+    "grupo": [
+      2,
+      4
+    ],
+    "som": "galinha"
+  },
+  {
+    "id": "coelho",
+    "label": "Coelho",
+    "icone": "carrot",
+    "sprite": {
+      "arquivo": "assets/animais/coelho.png",
+      "quadroLargura": 48,
+      "quadroAltura": 44
+    },
+    "escala": 0.112,
+    "quadros": {
+      "parado": 0,
+      "andar": [
+        1,
+        0,
+        2,
+        0
+      ],
+      "comer": 3
+    },
+    "terrenos": [
+      "pradaria",
+      "floresta",
+      "estepe"
+    ],
+    "vida": 3,
+    "velocidade": 1.4,
+    "comida": 6,
+    "comportamento": "arisco",
+    "densidade": 0.004,
+    "grupo": [
+      1,
+      2
+    ],
+    "som": "fuga"
+  },
+  {
+    "id": "cervo",
+    "label": "Cervo",
+    "icone": "paw",
+    "sprite": {
+      "arquivo": "assets/animais/cervo.png",
+      "quadroLargura": 92,
+      "quadroAltura": 92
+    },
+    "escala": 0.288,
+    "quadros": {
+      "parado": 0,
+      "andar": [
+        1,
+        0,
+        2,
+        0
+      ],
+      "comer": 3
+    },
+    "terrenos": [
+      "floresta",
+      "pradaria"
+    ],
+    "vida": 10,
+    "velocidade": 1.3,
+    "comida": 25,
+    "comportamento": "arisco",
+    "densidade": 0.004,
+    "grupo": [
+      1,
+      3
+    ],
+    "som": "fuga"
+  },
+  {
+    "id": "cabra",
+    "label": "Cabra",
+    "icone": "paw",
+    "sprite": {
+      "arquivo": "assets/animais/cabra.png",
+      "quadroLargura": 80,
+      "quadroAltura": 60
+    },
+    "escala": 0.234,
+    "quadros": {
+      "parado": 0,
+      "andar": [
+        1,
+        0,
+        2,
+        0
+      ],
+      "comer": 3
+    },
+    "terrenos": [
+      "colina",
+      "estepe"
+    ],
+    "vida": 9,
+    "velocidade": 0.8,
+    "comida": 18,
+    "comportamento": "arisco",
+    "densidade": 0.005,
+    "grupo": [
+      2,
+      3
+    ],
+    "som": "ovelha"
+  },
+  {
+    "id": "camelo",
+    "label": "Camelo",
+    "icone": "paw",
+    "sprite": {
+      "arquivo": "assets/animais/camelo.png",
+      "quadroLargura": 108,
+      "quadroAltura": 80
+    },
+    "escala": 0.359,
+    "quadros": {
+      "parado": 0,
+      "andar": [
+        1,
+        0,
+        2,
+        0
+      ],
+      "comer": 3
+    },
+    "terrenos": [
+      "deserto"
+    ],
+    "vida": 16,
+    "velocidade": 0.6,
+    "comida": 30,
+    "comportamento": "manso",
+    "densidade": 0.003,
+    "grupo": [
+      1,
+      2
+    ],
+    "som": "vaca"
+  },
+  {
+    "id": "lobo",
+    "label": "Lobo",
+    "icone": "paw",
+    "sprite": {
+      "arquivo": "assets/animais/lobo.png",
+      "quadroLargura": 104,
+      "quadroAltura": 60
+    },
+    "escala": 0.325,
+    "quadros": {
+      "parado": 0,
+      "andar": [
+        1,
+        0,
+        2,
+        0
+      ],
+      "comer": 3
+    },
+    "terrenos": [
+      "floresta",
+      "colina"
+    ],
+    "vida": 14,
+    "velocidade": 1.15,
+    "comida": 10,
+    "comportamento": "hostil",
+    "densidade": 0.0015,
+    "grupo": [
+      2,
+      3
+    ],
+    "ataque": 3,
+    "defesa": 1,
+    "alcanceAtaque": 0.8,
+    "raioAgressao": 4.5,
+    "som": "lobo"
+  },
+  {
+    "id": "urso",
+    "label": "Urso",
+    "icone": "paw",
+    "sprite": {
+      "arquivo": "assets/animais/urso.png",
+      "quadroLargura": 120,
+      "quadroAltura": 72
+    },
+    "escala": 0.422,
+    "quadros": {
+      "parado": 0,
+      "andar": [
+        1,
+        0,
+        2,
+        0
+      ],
+      "comer": 3
+    },
+    "terrenos": [
+      "floresta",
+      "colina"
+    ],
+    "vida": 40,
+    "velocidade": 0.9,
+    "comida": 45,
+    "comportamento": "hostil",
+    "densidade": 0.0008,
+    "grupo": [
+      1,
+      1
+    ],
+    "ataque": 6,
+    "defesa": 2,
+    "alcanceAtaque": 0.95,
+    "raioAgressao": 3.2,
+    "som": "urso"
+  },
+  {
+    "id": "javali",
+    "label": "Javali",
+    "icone": "paw",
+    "sprite": {
+      "arquivo": "assets/animais/javali.png",
+      "quadroLargura": 96,
+      "quadroAltura": 56
+    },
+    "escala": 0.292,
+    "quadros": {
+      "parado": 0,
+      "andar": [
+        1,
+        0,
+        2,
+        0
+      ],
+      "comer": 3
+    },
+    "terrenos": [
+      "floresta",
+      "pradaria"
+    ],
+    "vida": 18,
+    "velocidade": 1.05,
+    "comida": 22,
+    "comportamento": "defensivo",
+    "densidade": 0.003,
+    "grupo": [
+      1,
+      3
+    ],
+    "ataque": 3,
+    "defesa": 1,
+    "alcanceAtaque": 0.8,
+    "som": "javali"
+  },
+  {
+    "id": "raposa",
+    "label": "Raposa",
+    "icone": "paw",
+    "sprite": {
+      "arquivo": "assets/animais/raposa.png",
+      "quadroLargura": 88,
+      "quadroAltura": 48
+    },
+    "escala": 0.213,
+    "quadros": {
+      "parado": 0,
+      "andar": [
+        1,
+        0,
+        2,
+        0
+      ],
+      "comer": 3
+    },
+    "terrenos": [
+      "floresta",
+      "estepe",
+      "pradaria"
+    ],
+    "vida": 6,
+    "velocidade": 1.6,
+    "comida": 6,
+    "comportamento": "arisco",
+    "densidade": 0.002,
+    "grupo": [
+      1,
+      1
+    ],
+    "som": "raposa"
+  },
+  {
+    "id": "cavalo",
+    "label": "Cavalo selvagem",
+    "icone": "horse",
+    "sprite": {
+      "arquivo": "assets/animais/cavalo.png",
+      "quadroLargura": 108,
+      "quadroAltura": 88
+    },
+    "escala": 0.359,
+    "quadros": {
+      "parado": 0,
+      "andar": [
+        1,
+        0,
+        2,
+        0
+      ],
+      "comer": 3
+    },
+    "terrenos": [
+      "pradaria",
+      "estepe"
+    ],
+    "vida": 20,
+    "velocidade": 1.7,
+    "comida": 30,
+    "comportamento": "arisco",
+    "densidade": 0.003,
+    "grupo": [
+      3,
+      5
+    ],
+    "som": "cavalo"
+  },
+  {
+    "id": "porco",
+    "label": "Porco",
+    "icone": "piggy-bank",
+    "sprite": {
+      "arquivo": "assets/animais/porco.png",
+      "quadroLargura": 84,
+      "quadroAltura": 52
+    },
+    "escala": 0.223,
+    "quadros": {
+      "parado": 0,
+      "andar": [
+        1,
+        0,
+        2,
+        0
+      ],
+      "comer": 3
+    },
+    "terrenos": [
+      "pradaria"
+    ],
+    "vida": 10,
+    "velocidade": 0.5,
+    "comida": 25,
+    "comportamento": "manso",
+    "densidade": 0.002,
+    "grupo": [
+      2,
+      4
+    ],
+    "som": "porco"
+  },
+  {
+    "id": "pato",
+    "label": "Pato",
+    "icone": "feather",
+    "sprite": {
+      "arquivo": "assets/animais/pato.png",
+      "quadroLargura": 52,
+      "quadroAltura": 40
+    },
+    "escala": 0.112,
+    "quadros": {
+      "parado": 0,
+      "andar": [
+        1,
+        0,
+        2,
+        0
+      ],
+      "comer": 3
+    },
+    "terrenos": [
+      "praia"
+    ],
+    "vida": 3,
+    "velocidade": 0.6,
+    "comida": 5,
+    "comportamento": "arisco",
+    "densidade": 0.02,
+    "grupo": [
+      2,
+      4
+    ],
+    "som": "pato"
+  },
+  {
+    "id": "bisao",
+    "label": "Bisão",
+    "icone": "paw",
+    "sprite": {
+      "arquivo": "assets/animais/bisao.png",
+      "quadroLargura": 124,
+      "quadroAltura": 76
+    },
+    "escala": 0.46,
+    "quadros": {
+      "parado": 0,
+      "andar": [
+        1,
+        0,
+        2,
+        0
+      ],
+      "comer": 3
+    },
+    "terrenos": [
+      "estepe"
+    ],
+    "vida": 45,
+    "velocidade": 0.75,
+    "comida": 50,
+    "comportamento": "defensivo",
+    "densidade": 0.003,
+    "grupo": [
+      3,
+      6
+    ],
+    "ataque": 5,
+    "defesa": 2,
+    "alcanceAtaque": 1.0,
+    "som": "bisao"
+  },
+  {
+    "id": "escorpiao",
+    "label": "Escorpião",
+    "icone": "bug",
+    "sprite": {
+      "arquivo": "assets/animais/escorpiao.png",
+      "quadroLargura": 80,
+      "quadroAltura": 44
+    },
+    "escala": 0.156,
+    "quadros": {
+      "parado": 0,
+      "andar": [
+        1,
+        0,
+        2,
+        0
+      ],
+      "comer": 3
+    },
+    "terrenos": [
+      "deserto"
+    ],
+    "vida": 10,
+    "velocidade": 0.8,
+    "comida": 2,
+    "comportamento": "hostil",
+    "densidade": 0.003,
+    "grupo": [
+      1,
+      2
+    ],
+    "ataque": 3,
+    "defesa": 1,
+    "alcanceAtaque": 0.7,
+    "raioAgressao": 2.5,
+    "som": "escorpiao"
+  }
+]

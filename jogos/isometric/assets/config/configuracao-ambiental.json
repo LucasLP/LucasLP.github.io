@@ -1,0 +1,9 @@
+{
+  "corFundo": "#000000",
+  "corTile": "#173c22",
+  "corAgua": "#1f5f8b",
+  "corTileBorda": "rgba(0, 0, 0, 0.2)",
+  "corHover": "#d9d9d9",
+  "corSelecionado": "#ffd400",
+  "corPassaro": "rgba(24, 26, 22, 0.8)"
+}

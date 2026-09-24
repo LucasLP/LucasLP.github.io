@@ -1,0 +1,1288 @@
+[
+  {
+    "id": "camponês",
+    "label": "Camponês",
+    "icone": "person",
+    "imagem": {
+      "arquivo": "assets/personagens/campones-1.png",
+      "recorte": {
+        "sx": 0,
+        "sy": 0,
+        "sw": 50,
+        "sh": 77
+      }
+    },
+    "escala": 0.286,
+    "variantes": [
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/campones-1.png"
+        },
+        "quadroLargura": 50,
+        "quadroAltura": 77,
+        "escala": 0.286
+      },
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/campones-2.png"
+        },
+        "quadroLargura": 54,
+        "quadroAltura": 73,
+        "escala": 0.325
+      },
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/campones-3.png"
+        },
+        "quadroLargura": 52,
+        "quadroAltura": 72,
+        "escala": 0.318
+      },
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/campones-4.png"
+        },
+        "quadroLargura": 54,
+        "quadroAltura": 72,
+        "escala": 0.33
+      },
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/campones-5.png"
+        },
+        "quadroLargura": 54,
+        "quadroAltura": 72,
+        "escala": 0.33
+      },
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/campones-6.png"
+        },
+        "quadroLargura": 54,
+        "quadroAltura": 72,
+        "escala": 0.33
+      }
+    ],
+    "quadros": {
+      "parado": 0,
+      "andar": [
+        1,
+        0,
+        2,
+        0
+      ]
+    },
+    "atributos": {
+      "vida": 10,
+      "ataque": 1,
+      "defesa": 0,
+      "velocidade": 0.9,
+      "alcance": 0.9,
+      "raioVisao": 3
+    },
+    "trabalhador": true,
+    "producao": {
+      "cortando-madeira": {
+        "recurso": "madeira",
+        "quantidadePorSegundo": 0.25
+      },
+      "cultivando-fazenda": {
+        "recurso": "comida",
+        "quantidadePorSegundo": 0.1
+      },
+      "minerando": {
+        "recurso": "pedra",
+        "quantidadePorSegundo": 0.15
+      }
+    },
+    "descricao": "Faz de tudo um pouco: corta, minera, planta e constrói."
+  },
+  {
+    "id": "minerador",
+    "label": "Minerador",
+    "icone": "gem",
+    "imagem": {
+      "arquivo": "assets/personagens/minerador-1.png",
+      "recorte": {
+        "sx": 0,
+        "sy": 0,
+        "sw": 52,
+        "sh": 72
+      }
+    },
+    "escala": 0.318,
+    "variantes": [
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/minerador-1.png"
+        },
+        "quadroLargura": 52,
+        "quadroAltura": 72,
+        "escala": 0.318
+      },
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/minerador-2.png"
+        },
+        "quadroLargura": 54,
+        "quadroAltura": 72,
+        "escala": 0.33
+      },
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/minerador-3.png"
+        },
+        "quadroLargura": 54,
+        "quadroAltura": 72,
+        "escala": 0.33
+      },
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/minerador-4.png"
+        },
+        "quadroLargura": 54,
+        "quadroAltura": 72,
+        "escala": 0.33
+      }
+    ],
+    "quadros": {
+      "parado": 0,
+      "andar": [
+        1,
+        0,
+        2,
+        0
+      ]
+    },
+    "atributos": {
+      "vida": 12,
+      "ataque": 1,
+      "defesa": 0,
+      "velocidade": 0.85,
+      "alcance": 0.9,
+      "raioVisao": 3
+    },
+    "trabalhador": true,
+    "producao": {
+      "cortando-madeira": {
+        "recurso": "madeira",
+        "quantidadePorSegundo": 0.25
+      },
+      "cultivando-fazenda": {
+        "recurso": "comida",
+        "quantidadePorSegundo": 0.1
+      },
+      "minerando": {
+        "recurso": "pedra",
+        "quantidadePorSegundo": 0.15
+      }
+    },
+    "descricao": "Especialista em mineração: rende o dobro em rochas, minas e pedreira.",
+    "eficiencia": {
+      "minerando": 2.2,
+      "construindo": 0.8,
+      "cortando-madeira": 0.7,
+      "cultivando-fazenda": 0.6
+    }
+  },
+  {
+    "id": "lenhador",
+    "label": "Lenhador",
+    "icone": "tree",
+    "imagem": {
+      "arquivo": "assets/personagens/lenhador-1.png",
+      "recorte": {
+        "sx": 0,
+        "sy": 0,
+        "sw": 50,
+        "sh": 77
+      }
+    },
+    "escala": 0.286,
+    "variantes": [
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/lenhador-1.png"
+        },
+        "quadroLargura": 50,
+        "quadroAltura": 77,
+        "escala": 0.286
+      },
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/lenhador-2.png"
+        },
+        "quadroLargura": 54,
+        "quadroAltura": 73,
+        "escala": 0.325
+      }
+    ],
+    "quadros": {
+      "parado": 0,
+      "andar": [
+        1,
+        0,
+        2,
+        0
+      ]
+    },
+    "atributos": {
+      "vida": 12,
+      "ataque": 2,
+      "defesa": 0,
+      "velocidade": 0.9,
+      "alcance": 0.9,
+      "raioVisao": 3
+    },
+    "trabalhador": true,
+    "producao": {
+      "cortando-madeira": {
+        "recurso": "madeira",
+        "quantidadePorSegundo": 0.25
+      },
+      "cultivando-fazenda": {
+        "recurso": "comida",
+        "quantidadePorSegundo": 0.1
+      },
+      "minerando": {
+        "recurso": "pedra",
+        "quantidadePorSegundo": 0.15
+      }
+    },
+    "descricao": "Corta madeira bem mais rápido (árvores e madeireira).",
+    "eficiencia": {
+      "cortando-madeira": 2.2,
+      "construindo": 1.1,
+      "minerando": 0.6,
+      "cultivando-fazenda": 0.6
+    }
+  },
+  {
+    "id": "fazendeiro",
+    "label": "Fazendeiro",
+    "icone": "wheat-awn",
+    "imagem": {
+      "arquivo": "assets/personagens/fazendeiro-1.png",
+      "recorte": {
+        "sx": 0,
+        "sy": 0,
+        "sw": 52,
+        "sh": 72
+      }
+    },
+    "escala": 0.318,
+    "variantes": [
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/fazendeiro-1.png"
+        },
+        "quadroLargura": 52,
+        "quadroAltura": 72,
+        "escala": 0.318
+      },
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/fazendeiro-2.png"
+        },
+        "quadroLargura": 54,
+        "quadroAltura": 72,
+        "escala": 0.33
+      },
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/fazendeiro-3.png"
+        },
+        "quadroLargura": 54,
+        "quadroAltura": 72,
+        "escala": 0.33
+      },
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/fazendeiro-4.png"
+        },
+        "quadroLargura": 54,
+        "quadroAltura": 72,
+        "escala": 0.33
+      }
+    ],
+    "quadros": {
+      "parado": 0,
+      "andar": [
+        1,
+        0,
+        2,
+        0
+      ]
+    },
+    "atributos": {
+      "vida": 10,
+      "ataque": 1,
+      "defesa": 0,
+      "velocidade": 0.9,
+      "alcance": 0.9,
+      "raioVisao": 3
+    },
+    "trabalhador": true,
+    "producao": {
+      "cortando-madeira": {
+        "recurso": "madeira",
+        "quantidadePorSegundo": 0.25
+      },
+      "cultivando-fazenda": {
+        "recurso": "comida",
+        "quantidadePorSegundo": 0.1
+      },
+      "minerando": {
+        "recurso": "pedra",
+        "quantidadePorSegundo": 0.15
+      }
+    },
+    "descricao": "Cultiva e colhe muito mais rápido nas plantações e pastos.",
+    "eficiencia": {
+      "cultivando-fazenda": 2.2,
+      "construindo": 0.8,
+      "cortando-madeira": 0.7,
+      "minerando": 0.6
+    }
+  },
+  {
+    "id": "guerreiro",
+    "label": "Guerreiro",
+    "icone": "khanda",
+    "imagem": {
+      "arquivo": "assets/personagens/guerreiro-1.png",
+      "recorte": {
+        "sx": 0,
+        "sy": 0,
+        "sw": 64,
+        "sh": 69
+      }
+    },
+    "escala": 0.408,
+    "variantes": [
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/guerreiro-1.png"
+        },
+        "quadroLargura": 64,
+        "quadroAltura": 69,
+        "escala": 0.408
+      },
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/guerreiro-2.png"
+        },
+        "quadroLargura": 68,
+        "quadroAltura": 68,
+        "escala": 0.44
+      },
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/guerreiro-3.png"
+        },
+        "quadroLargura": 66,
+        "quadroAltura": 69,
+        "escala": 0.421
+      },
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/guerreiro-4.png"
+        },
+        "quadroLargura": 66,
+        "quadroAltura": 68,
+        "escala": 0.427
+      }
+    ],
+    "quadros": {
+      "parado": 0,
+      "andar": [
+        1,
+        0,
+        2,
+        0
+      ]
+    },
+    "atributos": {
+      "vida": 30,
+      "ataque": 5,
+      "defesa": 3,
+      "velocidade": 0.8,
+      "alcance": 0.9,
+      "raioVisao": 4
+    },
+    "trabalhador": false,
+    "descricao": "Soldado de linha: aguenta pancada e bate forte.",
+    "arma": "espada"
+  },
+  {
+    "id": "arqueiro",
+    "label": "Arqueiro",
+    "icone": "bullseye",
+    "imagem": {
+      "arquivo": "assets/personagens/arqueiro-1.png",
+      "recorte": {
+        "sx": 0,
+        "sy": 0,
+        "sw": 60,
+        "sh": 73
+      }
+    },
+    "escala": 0.362,
+    "variantes": [
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/arqueiro-1.png"
+        },
+        "quadroLargura": 60,
+        "quadroAltura": 73,
+        "escala": 0.362
+      },
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/arqueiro-2.png"
+        },
+        "quadroLargura": 60,
+        "quadroAltura": 72,
+        "escala": 0.367
+      },
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/arqueiro-3.png"
+        },
+        "quadroLargura": 70,
+        "quadroAltura": 73,
+        "escala": 0.422
+      },
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/arqueiro-4.png"
+        },
+        "quadroLargura": 60,
+        "quadroAltura": 73,
+        "escala": 0.362
+      }
+    ],
+    "quadros": {
+      "parado": 0,
+      "andar": [
+        1,
+        0,
+        2,
+        0
+      ]
+    },
+    "atributos": {
+      "vida": 18,
+      "ataque": 4,
+      "defesa": 1,
+      "velocidade": 0.95,
+      "alcance": 4.5,
+      "raioVisao": 6
+    },
+    "trabalhador": false,
+    "descricao": "Ataca de longe com flechas; frágil de perto.",
+    "arma": "arco",
+    "projetil": "flecha"
+  },
+  {
+    "id": "lanceiro",
+    "label": "Lanceiro",
+    "icone": "shield-halved",
+    "imagem": {
+      "arquivo": "assets/personagens/lanceiro-1.png",
+      "recorte": {
+        "sx": 0,
+        "sy": 0,
+        "sw": 66,
+        "sh": 69
+      }
+    },
+    "escala": 0.421,
+    "variantes": [
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/lanceiro-1.png"
+        },
+        "quadroLargura": 66,
+        "quadroAltura": 69,
+        "escala": 0.421
+      },
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/lanceiro-2.png"
+        },
+        "quadroLargura": 64,
+        "quadroAltura": 69,
+        "escala": 0.408
+      },
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/lanceiro-3.png"
+        },
+        "quadroLargura": 66,
+        "quadroAltura": 66,
+        "escala": 0.44
+      },
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/lanceiro-4.png"
+        },
+        "quadroLargura": 64,
+        "quadroAltura": 68,
+        "escala": 0.414
+      }
+    ],
+    "quadros": {
+      "parado": 0,
+      "andar": [
+        1,
+        0,
+        2,
+        0
+      ]
+    },
+    "atributos": {
+      "vida": 26,
+      "ataque": 4,
+      "defesa": 4,
+      "velocidade": 0.8,
+      "alcance": 1.35,
+      "raioVisao": 4
+    },
+    "trabalhador": false,
+    "arma": "lanca",
+    "descricao": "Muita defesa e lança comprida: segura a linha contra tribos e feras."
+  },
+  {
+    "id": "cavaleiro",
+    "label": "Cavaleiro",
+    "icone": "horse",
+    "imagem": {
+      "arquivo": "assets/personagens/cavaleiro-1.png",
+      "recorte": {
+        "sx": 0,
+        "sy": 0,
+        "sw": 108,
+        "sh": 94
+      }
+    },
+    "escala": 0.46,
+    "variantes": [
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/cavaleiro-1.png"
+        },
+        "quadroLargura": 108,
+        "quadroAltura": 94,
+        "escala": 0.46
+      },
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/cavaleiro-2.png"
+        },
+        "quadroLargura": 108,
+        "quadroAltura": 93,
+        "escala": 0.46
+      },
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/cavaleiro-3.png"
+        },
+        "quadroLargura": 108,
+        "quadroAltura": 94,
+        "escala": 0.46
+      },
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/cavaleiro-4.png"
+        },
+        "quadroLargura": 108,
+        "quadroAltura": 93,
+        "escala": 0.46
+      }
+    ],
+    "quadros": {
+      "parado": 0,
+      "andar": [
+        1,
+        0,
+        2,
+        0
+      ]
+    },
+    "atributos": {
+      "vida": 40,
+      "ataque": 6,
+      "defesa": 3,
+      "velocidade": 1.5,
+      "alcance": 1.0,
+      "raioVisao": 5
+    },
+    "trabalhador": false,
+    "arma": "espada",
+    "descricao": "Montado: o mais rápido e o mais forte, mas caro."
+  },
+  {
+    "id": "curandeiro",
+    "label": "Curandeiro",
+    "icone": "kit-medical",
+    "imagem": {
+      "arquivo": "assets/personagens/curandeiro-1.png",
+      "recorte": {
+        "sx": 0,
+        "sy": 0,
+        "sw": 86,
+        "sh": 65
+      }
+    },
+    "escala": 0.582,
+    "variantes": [
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/curandeiro-1.png"
+        },
+        "quadroLargura": 86,
+        "quadroAltura": 65,
+        "escala": 0.582
+      },
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/curandeiro-2.png"
+        },
+        "quadroLargura": 84,
+        "quadroAltura": 73,
+        "escala": 0.506
+      },
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/curandeiro-3.png"
+        },
+        "quadroLargura": 86,
+        "quadroAltura": 64,
+        "escala": 0.591
+      },
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/curandeiro-4.png"
+        },
+        "quadroLargura": 84,
+        "quadroAltura": 68,
+        "escala": 0.544
+      }
+    ],
+    "quadros": {
+      "parado": 0,
+      "andar": [
+        1,
+        0,
+        2,
+        0
+      ]
+    },
+    "atributos": {
+      "vida": 14,
+      "ataque": 1,
+      "defesa": 1,
+      "velocidade": 0.85,
+      "alcance": 0.9,
+      "raioVisao": 4
+    },
+    "trabalhador": false,
+    "arma": "cajado",
+    "cura": {
+      "porSegundo": 1.2,
+      "raio": 3.5
+    },
+    "descricao": "Cura sozinho os aliados feridos por perto. Foge se for atacado."
+  },
+  {
+    "id": "explorador",
+    "label": "Explorador",
+    "icone": "binoculars",
+    "imagem": {
+      "arquivo": "assets/personagens/explorador-1.png",
+      "recorte": {
+        "sx": 0,
+        "sy": 0,
+        "sw": 52,
+        "sh": 72
+      }
+    },
+    "escala": 0.318,
+    "variantes": [
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/explorador-1.png"
+        },
+        "quadroLargura": 52,
+        "quadroAltura": 72,
+        "escala": 0.318
+      },
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/explorador-2.png"
+        },
+        "quadroLargura": 52,
+        "quadroAltura": 72,
+        "escala": 0.318
+      },
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/explorador-3.png"
+        },
+        "quadroLargura": 52,
+        "quadroAltura": 72,
+        "escala": 0.318
+      },
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/explorador-4.png"
+        },
+        "quadroLargura": 52,
+        "quadroAltura": 72,
+        "escala": 0.318
+      }
+    ],
+    "quadros": {
+      "parado": 0,
+      "andar": [
+        1,
+        0,
+        2,
+        0
+      ]
+    },
+    "atributos": {
+      "vida": 14,
+      "ataque": 2,
+      "defesa": 0,
+      "velocidade": 1.35,
+      "alcance": 0.9,
+      "raioVisao": 9
+    },
+    "descricao": "Batedor: enxerga muito longe e anda rápido, mas luta mal. Pode sair explorando sozinho.",
+    "trabalhador": false,
+    "explorador": true
+  },
+  {
+    "id": "pescador",
+    "label": "Pescador",
+    "icone": "fish",
+    "imagem": {
+      "arquivo": "assets/personagens/pescador-1.png",
+      "recorte": {
+        "sx": 0,
+        "sy": 0,
+        "sw": 52,
+        "sh": 72
+      }
+    },
+    "escala": 0.318,
+    "variantes": [
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/pescador-1.png"
+        },
+        "quadroLargura": 52,
+        "quadroAltura": 72,
+        "escala": 0.318
+      },
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/pescador-2.png"
+        },
+        "quadroLargura": 52,
+        "quadroAltura": 72,
+        "escala": 0.318
+      },
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/pescador-3.png"
+        },
+        "quadroLargura": 52,
+        "quadroAltura": 72,
+        "escala": 0.318
+      },
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/pescador-4.png"
+        },
+        "quadroLargura": 52,
+        "quadroAltura": 72,
+        "escala": 0.318
+      }
+    ],
+    "quadros": {
+      "parado": 0,
+      "andar": [
+        1,
+        0,
+        2,
+        0
+      ]
+    },
+    "atributos": {
+      "vida": 10,
+      "ataque": 1,
+      "defesa": 0,
+      "velocidade": 0.9,
+      "alcance": 0.9,
+      "raioVisao": 3
+    },
+    "descricao": "Pesca no porto rendendo bem mais que um camponês.",
+    "trabalhador": true,
+    "producao": {
+      "cortando-madeira": {
+        "recurso": "madeira",
+        "quantidadePorSegundo": 0.25
+      },
+      "cultivando-fazenda": {
+        "recurso": "comida",
+        "quantidadePorSegundo": 0.1
+      },
+      "minerando": {
+        "recurso": "pedra",
+        "quantidadePorSegundo": 0.15
+      }
+    },
+    "eficiencia": {
+      "pescando": 2.4,
+      "construindo": 0.8,
+      "cortando-madeira": 0.7,
+      "cultivando-fazenda": 0.8,
+      "minerando": 0.6
+    }
+  },
+  {
+    "id": "ferreiro",
+    "label": "Ferreiro",
+    "icone": "fire-flame-curved",
+    "imagem": {
+      "arquivo": "assets/personagens/ferreiro-1.png",
+      "recorte": {
+        "sx": 0,
+        "sy": 0,
+        "sw": 52,
+        "sh": 72
+      }
+    },
+    "escala": 0.318,
+    "variantes": [
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/ferreiro-1.png"
+        },
+        "quadroLargura": 52,
+        "quadroAltura": 72,
+        "escala": 0.318
+      },
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/ferreiro-2.png"
+        },
+        "quadroLargura": 52,
+        "quadroAltura": 72,
+        "escala": 0.318
+      },
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/ferreiro-3.png"
+        },
+        "quadroLargura": 52,
+        "quadroAltura": 72,
+        "escala": 0.318
+      },
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/ferreiro-4.png"
+        },
+        "quadroLargura": 52,
+        "quadroAltura": 72,
+        "escala": 0.318
+      }
+    ],
+    "quadros": {
+      "parado": 0,
+      "andar": [
+        1,
+        0,
+        2,
+        0
+      ]
+    },
+    "atributos": {
+      "vida": 14,
+      "ataque": 2,
+      "defesa": 1,
+      "velocidade": 0.85,
+      "alcance": 0.9,
+      "raioVisao": 3
+    },
+    "descricao": "Trabalha na ferraria: forja as melhorias bem mais rápido.",
+    "trabalhador": true,
+    "producao": {
+      "cortando-madeira": {
+        "recurso": "madeira",
+        "quantidadePorSegundo": 0.25
+      },
+      "cultivando-fazenda": {
+        "recurso": "comida",
+        "quantidadePorSegundo": 0.1
+      },
+      "minerando": {
+        "recurso": "pedra",
+        "quantidadePorSegundo": 0.15
+      }
+    },
+    "eficiencia": {
+      "forjando": 2.4,
+      "construindo": 1.2,
+      "minerando": 0.9,
+      "cortando-madeira": 0.7,
+      "cultivando-fazenda": 0.6
+    }
+  },
+  {
+    "id": "construtor",
+    "label": "Construtor",
+    "icone": "helmet-safety",
+    "imagem": {
+      "arquivo": "assets/personagens/construtor-1.png",
+      "recorte": {
+        "sx": 0,
+        "sy": 0,
+        "sw": 52,
+        "sh": 72
+      }
+    },
+    "escala": 0.318,
+    "variantes": [
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/construtor-1.png"
+        },
+        "quadroLargura": 52,
+        "quadroAltura": 72,
+        "escala": 0.318
+      },
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/construtor-2.png"
+        },
+        "quadroLargura": 52,
+        "quadroAltura": 72,
+        "escala": 0.318
+      },
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/construtor-3.png"
+        },
+        "quadroLargura": 52,
+        "quadroAltura": 72,
+        "escala": 0.318
+      },
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/construtor-4.png"
+        },
+        "quadroLargura": 52,
+        "quadroAltura": 72,
+        "escala": 0.318
+      }
+    ],
+    "quadros": {
+      "parado": 0,
+      "andar": [
+        1,
+        0,
+        2,
+        0
+      ]
+    },
+    "atributos": {
+      "vida": 12,
+      "ataque": 1,
+      "defesa": 0,
+      "velocidade": 0.95,
+      "alcance": 0.9,
+      "raioVisao": 3
+    },
+    "descricao": "Ergue e conserta construções mais que o dobro mais rápido.",
+    "trabalhador": true,
+    "producao": {
+      "cortando-madeira": {
+        "recurso": "madeira",
+        "quantidadePorSegundo": 0.25
+      },
+      "cultivando-fazenda": {
+        "recurso": "comida",
+        "quantidadePorSegundo": 0.1
+      },
+      "minerando": {
+        "recurso": "pedra",
+        "quantidadePorSegundo": 0.15
+      }
+    },
+    "eficiencia": {
+      "construindo": 2.2,
+      "cortando-madeira": 0.9,
+      "minerando": 0.8,
+      "cultivando-fazenda": 0.6
+    }
+  },
+  {
+    "id": "besteiro",
+    "label": "Besteiro",
+    "icone": "crosshairs",
+    "imagem": {
+      "arquivo": "assets/personagens/besteiro-1.png",
+      "recorte": {
+        "sx": 0,
+        "sy": 0,
+        "sw": 60,
+        "sh": 72
+      }
+    },
+    "escala": 0.367,
+    "variantes": [
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/besteiro-1.png"
+        },
+        "quadroLargura": 60,
+        "quadroAltura": 72,
+        "escala": 0.367
+      },
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/besteiro-2.png"
+        },
+        "quadroLargura": 60,
+        "quadroAltura": 72,
+        "escala": 0.367
+      },
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/besteiro-3.png"
+        },
+        "quadroLargura": 60,
+        "quadroAltura": 72,
+        "escala": 0.367
+      },
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/besteiro-4.png"
+        },
+        "quadroLargura": 60,
+        "quadroAltura": 72,
+        "escala": 0.367
+      }
+    ],
+    "quadros": {
+      "parado": 0,
+      "andar": [
+        1,
+        0,
+        2,
+        0
+      ]
+    },
+    "atributos": {
+      "vida": 22,
+      "ataque": 7,
+      "defesa": 2,
+      "velocidade": 0.8,
+      "alcance": 5.5,
+      "raioVisao": 6
+    },
+    "descricao": "Besta pesada: longo alcance e dano alto, mas recarrega devagar.",
+    "trabalhador": false,
+    "projetil": "virote",
+    "intervaloAtaqueS": 2.2
+  },
+  {
+    "id": "tribal-guerreiro",
+    "label": "Guerreiro tribal",
+    "icone": "skull",
+    "imagem": {
+      "arquivo": "assets/personagens/tribal-guerreiro-1.png",
+      "recorte": {
+        "sx": 0,
+        "sy": 0,
+        "sw": 48,
+        "sh": 77
+      }
+    },
+    "escala": 0.274,
+    "variantes": [
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/tribal-guerreiro-1.png"
+        },
+        "quadroLargura": 48,
+        "quadroAltura": 77,
+        "escala": 0.274
+      },
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/tribal-guerreiro-2.png"
+        },
+        "quadroLargura": 56,
+        "quadroAltura": 73,
+        "escala": 0.338
+      },
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/tribal-guerreiro-3.png"
+        },
+        "quadroLargura": 64,
+        "quadroAltura": 68,
+        "escala": 0.414
+      },
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/tribal-guerreiro-4.png"
+        },
+        "quadroLargura": 62,
+        "quadroAltura": 68,
+        "escala": 0.401
+      }
+    ],
+    "quadros": {
+      "parado": 0,
+      "andar": [
+        1,
+        0,
+        2,
+        0
+      ]
+    },
+    "atributos": {
+      "vida": 20,
+      "ataque": 3,
+      "defesa": 1,
+      "velocidade": 0.85,
+      "alcance": 0.9,
+      "raioVisao": 5
+    },
+    "trabalhador": false,
+    "tribal": true,
+    "arma": "clava",
+    "danoConstrucao": 1.5,
+    "descricao": "Guerreiro de uma tribo hostil. Ataca pessoas e construções."
+  },
+  {
+    "id": "tribal-arqueiro",
+    "label": "Arqueiro tribal",
+    "icone": "skull",
+    "imagem": {
+      "arquivo": "assets/personagens/tribal-arqueiro-1.png",
+      "recorte": {
+        "sx": 0,
+        "sy": 0,
+        "sw": 58,
+        "sh": 72
+      }
+    },
+    "escala": 0.354,
+    "variantes": [
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/tribal-arqueiro-1.png"
+        },
+        "quadroLargura": 58,
+        "quadroAltura": 72,
+        "escala": 0.354
+      },
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/tribal-arqueiro-2.png"
+        },
+        "quadroLargura": 70,
+        "quadroAltura": 72,
+        "escala": 0.428
+      }
+    ],
+    "quadros": {
+      "parado": 0,
+      "andar": [
+        1,
+        0,
+        2,
+        0
+      ]
+    },
+    "atributos": {
+      "vida": 14,
+      "ataque": 3,
+      "defesa": 0,
+      "velocidade": 0.9,
+      "alcance": 4.0,
+      "raioVisao": 6
+    },
+    "trabalhador": false,
+    "tribal": true,
+    "arma": "arco",
+    "projetil": "flecha",
+    "descricao": "Atira flechas de longe. Frágil de perto."
+  },
+  {
+    "id": "tribal-xama",
+    "label": "Xamã tribal",
+    "icone": "hat-wizard",
+    "imagem": {
+      "arquivo": "assets/personagens/tribal-xama-1.png",
+      "recorte": {
+        "sx": 0,
+        "sy": 0,
+        "sw": 68,
+        "sh": 73
+      }
+    },
+    "escala": 0.41,
+    "variantes": [
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/tribal-xama-1.png"
+        },
+        "quadroLargura": 68,
+        "quadroAltura": 73,
+        "escala": 0.41
+      },
+      {
+        "imagem": {
+          "arquivo": "assets/personagens/tribal-xama-2.png"
+        },
+        "quadroLargura": 72,
+        "quadroAltura": 68,
+        "escala": 0.466
+      }
+    ],
+    "quadros": {
+      "parado": 0,
+      "andar": [
+        1,
+        0,
+        2,
+        0
+      ]
+    },
+    "atributos": {
+      "vida": 16,
+      "ataque": 3,
+      "defesa": 0,
+      "velocidade": 0.8,
+      "alcance": 3.5,
+      "raioVisao": 5
+    },
+    "trabalhador": false,
+    "tribal": true,
+    "arma": "cajado",
+    "projetil": "magia",
+    "cura": {
+      "porSegundo": 0.8,
+      "raio": 3
+    },
+    "descricao": "Lança magia de longe e cura os guerreiros da tribo."
+  }
+]

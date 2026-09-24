@@ -1,0 +1,327 @@
+{
+  "arvore": {
+    "estagios": [
+      {
+        "arquivo": "assets/natureza/arvores/carvalho-1.png",
+        "escala": 0.773
+      },
+      {
+        "arquivo": "assets/natureza/arvores/carvalho-2.png",
+        "escala": 0.758
+      },
+      {
+        "arquivo": "assets/natureza/arvores/carvalho-3.png",
+        "escala": 0.773
+      },
+      {
+        "arquivo": "assets/natureza/arvores/carvalho-4.png",
+        "escala": 0.758
+      },
+      {
+        "arquivo": "assets/natureza/arvores/carvalho-5.png",
+        "escala": 0.894
+      },
+      {
+        "arquivo": "assets/natureza/arvores/carvalho-7.png",
+        "escala": 0.803
+      }
+    ]
+  },
+  "pinheiro": {
+    "estagios": [
+      {
+        "arquivo": "assets/natureza/arvores/pinheiro-1.png",
+        "escala": 0.742
+      },
+      {
+        "arquivo": "assets/natureza/arvores/pinheiro-2.png",
+        "escala": 0.773
+      },
+      {
+        "arquivo": "assets/natureza/arvores/pinheiro-3.png",
+        "escala": 0.773
+      }
+    ]
+  },
+  "terrenos": {
+    "pradaria": [
+      {
+        "arquivo": "assets/terreno/grama-1.png"
+      },
+      {
+        "arquivo": "assets/terreno/grama-2.png"
+      },
+      {
+        "arquivo": "assets/terreno/grama-3.png"
+      },
+      {
+        "arquivo": "assets/terreno/grama-4.png"
+      },
+      {
+        "arquivo": "assets/terreno/grama-1.png"
+      },
+      {
+        "arquivo": "assets/terreno/grama-2.png"
+      },
+      {
+        "arquivo": "assets/terreno/grama-tufos.png"
+      },
+      {
+        "arquivo": "assets/terreno/grama-flores.png"
+      }
+    ],
+    "floresta": [
+      {
+        "arquivo": "assets/terreno/floresta-1.png"
+      },
+      {
+        "arquivo": "assets/terreno/floresta-2.png"
+      },
+      {
+        "arquivo": "assets/terreno/floresta-3.png"
+      },
+      {
+        "arquivo": "assets/terreno/grama-tufos.png"
+      }
+    ],
+    "estepe": [
+      {
+        "arquivo": "assets/terreno/estepe-1.png"
+      },
+      {
+        "arquivo": "assets/terreno/estepe-1.png"
+      },
+      {
+        "arquivo": "assets/terreno/estepe-2.png"
+      }
+    ],
+    "deserto": [
+      {
+        "arquivo": "assets/terreno/areia-1.png"
+      },
+      {
+        "arquivo": "assets/terreno/areia-2.png"
+      },
+      {
+        "arquivo": "assets/terreno/areia-duna.png"
+      }
+    ],
+    "praia": [
+      {
+        "arquivo": "assets/terreno/praia.png"
+      }
+    ],
+    "colina": [
+      {
+        "arquivo": "assets/terreno/rocha-1.png"
+      },
+      {
+        "arquivo": "assets/terreno/rocha-1.png"
+      },
+      {
+        "arquivo": "assets/terreno/terra-1.png"
+      }
+    ],
+    "montanha": [
+      {
+        "arquivo": "assets/terreno/rocha-1.png"
+      },
+      {
+        "arquivo": "assets/terreno/rocha-2.png"
+      }
+    ],
+    "neve": [
+      {
+        "arquivo": "assets/terreno/neve-1.png"
+      },
+      {
+        "arquivo": "assets/terreno/neve-2.png"
+      }
+    ],
+    "agua": [
+      {
+        "arquivo": "assets/terreno/agua-1.png"
+      },
+      {
+        "arquivo": "assets/terreno/agua-2.png"
+      }
+    ]
+  },
+  "plantacao": [
+    {
+      "arquivo": "assets/terreno/fazenda-arada.png"
+    },
+    {
+      "arquivo": "assets/terreno/fazenda-brotos.png"
+    },
+    {
+      "arquivo": "assets/terreno/fazenda-trigo.png"
+    }
+  ],
+  "montanhas": {
+    "montanha": [
+      {
+        "arquivo": "assets/natureza/montanhas/montanha-1.png",
+        "escala": 1.091
+      },
+      {
+        "arquivo": "assets/natureza/montanhas/montanha-2.png",
+        "escala": 1.091
+      },
+      {
+        "arquivo": "assets/natureza/montanhas/montanha-3.png",
+        "escala": 1.091
+      },
+      {
+        "arquivo": "assets/natureza/montanhas/montanha-4.png",
+        "escala": 1.091
+      }
+    ],
+    "neve": [
+      {
+        "arquivo": "assets/natureza/montanhas/montanha-neve-1.png",
+        "escala": 1.091
+      },
+      {
+        "arquivo": "assets/natureza/montanhas/montanha-neve-2.png",
+        "escala": 1.091
+      },
+      {
+        "arquivo": "assets/natureza/montanhas/montanha-neve-3.png",
+        "escala": 1.091
+      }
+    ],
+    "colina": [
+      {
+        "arquivo": "assets/natureza/montanhas/colina-1.png",
+        "escala": 1.091
+      },
+      {
+        "arquivo": "assets/natureza/montanhas/colina-2.png",
+        "escala": 1.091
+      }
+    ]
+  },
+  "minerios": {
+    "pedra": [
+      {
+        "arquivo": "assets/natureza/minerios/rocha-pedra-1.png",
+        "escala": 0.65
+      },
+      {
+        "arquivo": "assets/natureza/minerios/rocha-pedra-2.png",
+        "escala": 0.65
+      }
+    ],
+    "ferro": [
+      {
+        "arquivo": "assets/natureza/minerios/rocha-ferro-1.png",
+        "escala": 0.65
+      },
+      {
+        "arquivo": "assets/natureza/minerios/rocha-ferro-2.png",
+        "escala": 0.65
+      }
+    ],
+    "ouro": [
+      {
+        "arquivo": "assets/natureza/minerios/rocha-ouro-1.png",
+        "escala": 0.65
+      },
+      {
+        "arquivo": "assets/natureza/minerios/rocha-ouro-2.png",
+        "escala": 0.65
+      }
+    ]
+  },
+  "decoracoes": {
+    "flores-1": {
+      "arquivo": "assets/natureza/decoracao/flores-1.png",
+      "escala": 0.909
+    },
+    "flores-2": {
+      "arquivo": "assets/natureza/decoracao/flores-2.png",
+      "escala": 0.894
+    },
+    "flores-3": {
+      "arquivo": "assets/natureza/decoracao/flores-3.png",
+      "escala": 0.864
+    },
+    "pedrinhas": {
+      "arquivo": "assets/natureza/decoracao/pedrinhas.png",
+      "escala": 0.879
+    },
+    "cogumelos": {
+      "arquivo": "assets/natureza/decoracao/cogumelos.png",
+      "escala": 0.879
+    },
+    "arbusto-1": {
+      "arquivo": "assets/natureza/decoracao/arbusto-1.png",
+      "escala": 0.712
+    },
+    "arbusto-2": {
+      "arquivo": "assets/natureza/decoracao/arbusto-2.png",
+      "escala": 0.818
+    },
+    "tronco-1": {
+      "arquivo": "assets/natureza/decoracao/tronco-1.png",
+      "escala": 0.803
+    },
+    "tronco-2": {
+      "arquivo": "assets/natureza/decoracao/tronco-2.png",
+      "escala": 0.818
+    },
+    "toco-1": {
+      "arquivo": "assets/natureza/decoracao/toco-1.png",
+      "escala": 0.833
+    },
+    "toco-2": {
+      "arquivo": "assets/natureza/decoracao/toco-2.png",
+      "escala": 0.864
+    },
+    "toco-3": {
+      "arquivo": "assets/natureza/decoracao/toco-3.png",
+      "escala": 0.864
+    },
+    "cacto-1": {
+      "arquivo": "assets/natureza/decoracao/cacto-1.png",
+      "escala": 0.35
+    },
+    "cacto-2": {
+      "arquivo": "assets/natureza/decoracao/cacto-2.png",
+      "escala": 0.35
+    },
+    "cacto-redondo-3": {
+      "arquivo": "assets/natureza/decoracao/cacto-redondo-3.png",
+      "escala": 0.35
+    },
+    "arbusto-seco-4": {
+      "arquivo": "assets/natureza/decoracao/arbusto-seco-4.png",
+      "escala": 0.4
+    },
+    "arbusto-seco-5": {
+      "arquivo": "assets/natureza/decoracao/arbusto-seco-5.png",
+      "escala": 0.4
+    },
+    "pedra-deserto": {
+      "arquivo": "assets/natureza/decoracao/pedra-deserto.png",
+      "escala": 0.45
+    },
+    "pedra-neve": {
+      "arquivo": "assets/natureza/decoracao/pedra-neve.png",
+      "escala": 0.45
+    },
+    "ossos": {
+      "arquivo": "assets/natureza/decoracao/ossos.png",
+      "escala": 0.35
+    },
+    "ruinas": {
+      "arquivo": "assets/edificios/ruinas.png",
+      "escala": 0.906
+    }
+  },
+  "canteiro": {
+    "arquivo": "assets/edificios/canteiro.png",
+    "escala": 0.92
+  }
+}

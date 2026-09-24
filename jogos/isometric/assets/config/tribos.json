@@ -1,0 +1,150 @@
+{
+  "nomes": [
+    "Tribo do Lobo Cinzento",
+    "Clã da Presa Partida",
+    "Povo das Cinzas",
+    "Filhos do Trovão",
+    "Tribo da Lua Vermelha",
+    "Clã do Corvo",
+    "Tribo das Areias",
+    "Povo da Pedra Negra"
+  ],
+  "cores": [
+    "#e05252",
+    "#e0892f",
+    "#b05ad9",
+    "#d94f8c",
+    "#c9b03a",
+    "#4fb39a"
+  ],
+  "estruturas": {
+    "fogueira": {
+      "label": "Fogueira do conselho",
+      "icone": "fire",
+      "imagem": {
+        "arquivo": "assets/edificios/tribo-fogueira.png"
+      },
+      "escala": 0.5,
+      "vida": 160
+    },
+    "totem": {
+      "label": "Totem",
+      "icone": "monument",
+      "imagem": {
+        "arquivo": "assets/edificios/tribo-totem.png"
+      },
+      "escala": 0.484,
+      "vida": 260
+    },
+    "tenda": {
+      "label": "Tenda de couro",
+      "icone": "campground",
+      "imagem": {
+        "arquivo": "assets/edificios/tribo-tenda.png"
+      },
+      "escala": 0.812,
+      "vida": 180
+    },
+    "cabana": {
+      "label": "Cabana de caça",
+      "icone": "house-chimney-crack",
+      "imagem": {
+        "arquivo": "assets/edificios/tribo-cabana.png"
+      },
+      "escala": 0.844,
+      "vida": 240
+    },
+    "pedras": {
+      "label": "Círculo de pedras",
+      "icone": "circle-nodes",
+      "imagem": {
+        "arquivo": "assets/edificios/tribo-pedras.png"
+      },
+      "escala": 0.875,
+      "vida": 380
+    }
+  },
+  "layout": {
+    "tendas": [
+      2,
+      3
+    ],
+    "cabanas": [
+      1,
+      2
+    ],
+    "chancePedras": 0.4
+  },
+  "unidades": {
+    "tipos": {
+      "guerreiro": "tribal-guerreiro",
+      "arqueiro": "tribal-arqueiro",
+      "xama": "tribal-xama"
+    },
+    "guerreiros": [
+      3,
+      5
+    ],
+    "arqueiros": [
+      1,
+      2
+    ],
+    "xamas": [
+      0,
+      1
+    ]
+  },
+  "acampamentos": {
+    "tilesPorAcampamento": 3000,
+    "minimo": 2,
+    "maximo": 7,
+    "distanciaMinimaInicio": 26,
+    "distanciaEntreAcampamentos": 18,
+    "raioTerritorio": 6,
+    "terrenos": [
+      "floresta",
+      "estepe",
+      "colina",
+      "deserto",
+      "pradaria"
+    ]
+  },
+  "ataques": {
+    "primeiroAposS": [
+      600,
+      840
+    ],
+    "intervaloS": [
+      360,
+      600
+    ],
+    "fracaoGuerreiros": 0.5,
+    "minimo": 2,
+    "noiteAcelera": 1.4
+  },
+  "reposicaoS": 80,
+  "saque": [
+    {
+      "recurso": "ouro",
+      "quantidade": 40
+    },
+    {
+      "recurso": "comida",
+      "quantidade": 40
+    },
+    {
+      "recurso": "madeira",
+      "quantidade": 30
+    }
+  ],
+  "saquePorEstrutura": [
+    {
+      "recurso": "ouro",
+      "quantidade": 5
+    },
+    {
+      "recurso": "madeira",
+      "quantidade": 5
+    }
+  ]
+}
